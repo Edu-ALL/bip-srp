@@ -40,6 +40,9 @@ body, h1, h2,h3,h4,h5,h6 {
 }
 
 @media only screen and (max-width: 768px) {
+  .text-header {
+    font-size: 18px !important;
+  }
   .text-header-italic{
     margin-bottom: 5vh !important;
   }
@@ -95,7 +98,12 @@ body, h1, h2,h3,h4,h5,h6 {
     padding-left: 0rem !important;
   }
 
+  .text-title-section-2 {
+    font-size: 28px !important;
+  }
+
   .text-title-section-4{
+    font-size: 52px !important;
     margin-bottom: 2vh !important;
     /* margin-left: 7vh; */
   }
@@ -437,10 +445,10 @@ body, h1, h2,h3,h4,h5,h6 {
 
 .text-header-italic{
   font-family: "SFProMedium";
-  font-size: 22px;
+  font-size: 18px;
   color: var(--black);
   /* font-weight: 300; */
-  margin-bottom: 20vh;
+  margin-bottom: 12vh;
   letter-spacing: 0.01em;
 }
 
@@ -464,11 +472,11 @@ body, h1, h2,h3,h4,h5,h6 {
 
 .text-title-section-4{
   font-family: "SFProBold";
-  font-size: 80px;
+  font-size: 60px;
   color: var(--blue);
   font-weight: 900;
   line-height: 0.9;
-  margin-bottom: 30vh;
+  /* margin-bottom: 30vh; */
   /* margin-left: 7vh; */
 }
 
@@ -486,16 +494,17 @@ body, h1, h2,h3,h4,h5,h6 {
   color: var(--blue);
   /* font-weight: 300; */
   letter-spacing: 0.01em;
-  margin-bottom: 20vh;
+  /* margin-bottom: 20vh; */
 }
 
 .text-desc-section-2{
   font-family: "SFProBold";
-  font-size: 34px;
+  font-size: 30px;
   color: var(--blue-light);
   font-weight: 800;
   margin-bottom: 5vh !important;
   /* margin-left: 7vh; */
+  line-height: 40px;
 }
 
 .text-price-section-3{
@@ -520,11 +529,11 @@ body, h1, h2,h3,h4,h5,h6 {
 
 .text-early-section-4{
   font-family: "SFProBold";
-  font-size: 44px;
+  font-size: 40px;
   color: var(--orange);
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 2vh !important;
+  /* margin-bottom: 2vh !important; */
   /* margin-left: 7vh; */
 }
 /* .subtitle-about-us-2{
@@ -539,16 +548,21 @@ body, h1, h2,h3,h4,h5,h6 {
   height: 200px;
 }
 
+.card {
+  border-radius: 16px;
+}
 .card-text{
   color: var(--blue);
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.2;
+  text-align: start;
 }
 
 .card-text-2{
   color: var(--blue);
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.2;
+  text-align: start;
 }
 
 
