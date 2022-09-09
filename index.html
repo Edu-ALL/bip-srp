@@ -22,24 +22,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="asset/img/favicon/favicon-16x16.png">
     <title>Immersion Program</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <style>
-        .navbar {
-            transition: all 0.3s !important;
-        }
 
-        .nav-not-active {
-            top: -100px !important;
-        }
-
-        .nav-active {
-            top: 0 !important;
-        }
     </style>
 </head>
 
 
 <body>
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-scroll px-lg-5 p-md-2 nav-not-active">
+    <nav id="navbar"
+        class="navbar fixed-top navbar-expand-lg navbar-scroll px-lg-5 p-md-2 nav-not-active nav-not-active-sm">
         <div class="container">
             <img class="navbar-pic" src="/asset/img/LOGO GIP.webp" alt="">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -98,11 +90,15 @@
     </div>
 
     <div class="container">
-        <div class="row align-items-center" style="height:100vh">
+        <div class="row align-items-center passion">
             <div class="col-12 pb-5">
                 <h1 class="make-passion text-center" data-aos="fade" data-aos-duration="20000">
-                    Now is your turn to
-                    make your passion into action!
+                    <div id="passionString">
+                        <p class="fw-bold">
+                            Now is your turn to make your passion into action!
+                        </p>
+                    </div>
+                    <span id="typed"></span>
                 </h1>
             </div>
         </div>
@@ -112,7 +108,7 @@
     <section id="about-us">
         <div class="container w-100 section-4 w-100">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 g-3">
                     <h1 class="">
                         <img class="logo-header logo-active" id="logo-header" src="/asset/img/main/logo.webp">
                     </h1>
@@ -150,7 +146,10 @@
 
             <div class="row align-items-end justify-content-center">
                 <div class="col-md-6">
-                    <p class="text-early-section-5">FOR<br> 1,950 USD,<br> YOU WILL GET TO</p>
+                    <p class="text-early-section-5">FOR<br> <span class="bg-stabilo text-white px-2 rounded">1,950
+                            USD</span>,<br>
+                        YOU WILL GET
+                        TO</p>
                 </div>
                 <div class="col-md-5">
                     <ol class="text-paragraph-section-5" type="1">
@@ -175,7 +174,7 @@
                     </ol>
                 </div>
 
-                <div class="my-5"></div>
+                <div class="my-md-5"></div>
 
                 <div class="col-md-6">
                     <p class="text-title-section-6">Apply Before November 2022</p>
@@ -190,7 +189,7 @@
                     <p class="text-date-section-5">05 September 2022 - 21 October 2022</p>
                 </div>
 
-                <div class="my-5"></div>
+                <div class="my-md-5"></div>
 
                 <div class="col-md-6">
                     <p class="text-desc-section-4">
@@ -221,15 +220,15 @@
                         </h2>
                     </div>
                     <div class="container section-7 w-100">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 justify-content-center margin-early-section-7">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-md-3 col-5">
                                 <h1 class="justify-content-end">
-                                    <img class="logo-header-2" src="/asset/img/bip/LOGO BIP.webp">
+                                    <img class="w-100" src="/asset/img/bip/LOGO BIP.webp">
                                 </h1>
                             </div>
-                            <div class="col-md-6 justify-content-end margin-early-section-6">
+                            <div class="col-md-3 col-5">
                                 <h1 class="justify-content-center">
-                                    <img class="logo-header-2" src="/asset/img/srip/LOGO SRIP.webp">
+                                    <img class="w-100" src="/asset/img/srip/LOGO SRIP.webp">
                                 </h1>
                             </div>
                         </div>
@@ -240,8 +239,8 @@
                             <span class="subtitle-what-learn">What you’ll learn</span>
                         </h2>
                     </div>
-                    <div class="row align-items-stretch">
-                        <div class="col-md-5">
+                    <div class="row align-items-stretch justify-content-between  mb-md-0 mb-4">
+                        <div class="col-md-5 col-6">
                             <p>
                                 <span class="what-you-learn-bip">
                                     Problem Identification
@@ -264,10 +263,10 @@
                                 </span>
                             </p>
                         </div>
-                        <div class="col-md-2 text-center d-flex justify-content-center">
+                        <div class="col-md-2 text-center d-md-flex justify-content-center d-none">
                             <div class="vertical-line"></div>
                         </div>
-                        <div class="col-md-5 text-end">
+                        <div class="col-md-5 col-6 text-end">
                             <p>
                                 <span class="what-you-learn-srip" style="margin-right: 1vh;">
                                     Genetic Engineering
@@ -299,8 +298,8 @@
                             <span class="subtitle-what-learn">Your target major</span>
                         </h2>
                     </div>
-                    <div class="row align-items-stretch">
-                        <div class="col-md-5">
+                    <div class="row align-items-stretch justify-content-between  mb-md-0 mb-4">
+                        <div class="col-md-5 col-6">
                             <p>
                                 <span class="what-you-learn-bip">
                                     <img class="num1" src="asset/img/icons/business_black.png" width="5%" alt="">
@@ -319,10 +318,10 @@
                                 </span>
                             </p>
                         </div>
-                        <div class="col-md-2 text-center d-flex justify-content-center">
+                        <div class="col-md-2 text-center d-md-flex justify-content-center d-none">
                             <div class="vertical-line"></div>
                         </div>
-                        <div class="col-md-5 text-end">
+                        <div class="col-md-5 col-6 text-end">
                             <p>
                                 <span class="what-you-learn-srip" style="margin-right: 1vh;">
                                     <img class="num1" src="asset/img/icons/akar-icons_gear.png" width="6%" alt="">
@@ -363,9 +362,9 @@
                             <span class="subtitle-what-learn">Your activities</span>
                         </h2>
                     </div>
-                    <div class="row align-items-stretch">
-                        <div class="col-md-5">
-                            <h5>
+                    <div class="row align-items-stretch justify-content-between  mb-md-0 mb-4">
+                        <div class="col-md-5 col-6">
+                            <h5 class="text-activity">
                                 <ol type="1">
                                     <li>
                                         Business mentoring
@@ -385,11 +384,11 @@
                                 </ol>
                             </h5>
                         </div>
-                        <div class="col-md-2 text-center d-flex justify-content-center">
+                        <div class="col-md-2 text-center d-md-flex justify-content-center d-none">
                             <div class="vertical-line"></div>
                         </div>
-                        <div class="col-md-5">
-                            <h5>
+                        <div class="col-md-5 col-6">
+                            <h5 class="text-activity">
                                 <ol type="1">
                                     <li>
                                         Scientific research mentoring
@@ -413,35 +412,33 @@
                             <span class="subtitle-what-learn">Your final output</span>
                         </h2>
                     </div>
-                    <div class="row align-items-stretch">
-                        <div class="col-md-5">
+                    <div class="row align-items-md-stretch align-items-center justify-content-between  mb-md-0 mb-4">
+                        <div class="col-md-5 col-6">
                             <div class="d-flex align-items-center">
-                                <div class="p-2" style="width:15%">
-                                    <img class="num1 w-100" src="asset/img/icons/carbon_group-presentation.png"
+                                <div class="p-2" style="width:20%">
+                                    <img class="num1 w-100 px-md-3" src="asset/img/icons/carbon_group-presentation.png"
                                         width="100%" alt="">
                                 </div>
-                                <div class="" style="width:85%">
-                                    <span class="what-you-learn-bip">
-                                        Bussiness
-                                    </span>
-                                    <span class="what-you-learn-bip-polos">pitch to real angel investors with a
-                                        possible seed funding </span>
+                                <div class="" style="width:80%">
+                                    <span class="what-you-learn-bip">Bussiness</span>
+                                    <span class="what-you-learn-bip-polos">
+                                        pitch to real angel investors with a</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 text-center d-flex justify-content-center">
+                        <div class="col-md-2 text-center d-md-flex justify-content-center d-none">
                             <div class="vertical-line"></div>
                         </div>
-                        <div class="col-md-5 text-end">
+                        <div class="col-md-5 col-6 text-end">
                             <p>
                             <div class="row">
-                                <div class="d-flex align-items-center">
-                                    <div class="" style="width:10%">
-                                        <img class="num1 w-100"
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <div class="" style="width:20%">
+                                        <img class="num1 w-100 px-md-4"
                                             src="asset/img/icons/healthicons_i-certificate-paper-outline.png">
                                     </div>
-                                    <div class="" style="width:90%">
-                                        <span class="what-you-learn-srip-polos">Presentation in a </span>
+                                    <div class="" style="width:80%"><span class="what-you-learn-bip-polos">Presentation
+                                            in a</span>
                                         <span class="what-you-learn-srip">
                                             mini research symposium
                                         </span>
@@ -452,7 +449,52 @@
 
                         </div>
                     </div>
+
+                    <div class="col-md-12">
+                        <h2 class="text-center">
+                            <span class="subtitle-what-learn">Next Level</span>
+                        </h2>
+                    </div>
+                    <div class="row align-items-md-stretch align-items-center justify-content-between  mb-md-0 mb-4">
+                        <div class="col-md-5 col-6">
+                            <h5 class="text-activity">
+                                Running your own business
+                            </h5>
+                        </div>
+                        <div class="col-md-2 text-center d-md-flex justify-content-center d-none">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="col-md-5 col-6 text-end">
+                            <h5 class="text-activity">
+                                Publishing your own research paper
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-md-stretch align-items-center justify-content-between">
+                        <div class="col-md-5 col-6 pt-3 pb-5">
+                            <a href="#" class="btn btn-bip">I’m the future entrepreneur!</a>
+                        </div>
+                        <div class="col-md-2 text-center d-md-flex justify-content-center d-none">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="col-md-5 col-6 pt-3 text-end">
+                            <a href="#" class="btn btn-srip">I’m the future researcher!</a>
+                        </div>
+                    </div>
                 </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center py-4">
+                    <h4 class="subtitle-our-team text-white">
+                        Skills to obtain
+                    </h4>
+                </div>
             </div>
         </div>
     </div>
@@ -505,12 +547,19 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script>
 
+        var typed = new Typed('#typed', {
+            stringsElement: '#passionString',
+            typeSpeed: 40,
+            loop: true,
+            fadeOut: true,
+            backDelay: 3000,
+        });
 
         $(function () {
             var navbar = $('.navbar');
             $(window).scroll(function () {
                 // Logo
-                if ($(window).scrollTop() >= 2600) {
+                if ($(window).scrollTop() >= 2630) {
                     $('#logo-header').removeClass('logo-active')
                     $('#logo-header').addClass('logo-not-active')
                 } else {
@@ -519,7 +568,7 @@
                 }
 
                 // Navbar 
-                if ($(window).scrollTop() >= 2750) {
+                if ($(window).scrollTop() >= 2650) {
                     navbar.removeClass('nav-not-active');
                     navbar.addClass('nav-active');
 
