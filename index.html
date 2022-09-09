@@ -21,89 +21,25 @@
     <link rel="icon" type="image/png" sizes="32x32" href="asset/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="asset/img/favicon/favicon-16x16.png">
     <title>Immersion Program</title>
+
+    <style>
+        .navbar {
+            transition: all 0.3s !important;
+        }
+
+        .nav-not-active {
+            top: -100px !important;
+        }
+
+        .nav-active {
+            top: 0 !important;
+        }
+    </style>
 </head>
 
 
 <body>
-
-
-    <!-- container-fluid header-bg w-100 d-flex justify-content-center -->
-    <div id="section-1" class="section-1">
-        <div class="container-fluid header-bg w-100 d-flex">
-            <div class="row margin-header-section-2">
-                <div class="col-md-5">
-                </div>
-                <div class="col-md-6 justify-content-center text-section-2" data-aos="fade-left"
-                    data-aos-duration="2000">
-                    <h3>
-                        <p class="text-title-section-4">Top university application doesn’t only require students to have
-                            stellar grades and outstanding achievements, but a strong personal brand as well. </p>
-                        <!-- <span class="text-header">
-                            Top university application doesn’t only require students to have stellar grades and
-                            outstanding achievements, but a strong personal brand as well.
-                        </span> -->
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="section-1" class="section-1">
-        <div class="container-fluid header-bg-2 w-100 d-flex">
-            <div class="row margin-header-section-2">
-                <div class="col-md-6 justify-content-center text-section-2" data-aos="fade-right"
-                    data-aos-duration="2000">
-                    <h3>
-                        <p class="text-title-section-5">Top university application doesn’t only require students to have
-                            stellar grades and outstanding achievements, but a strong personal brand as well.
-                        </p>
-                    </h3>
-                </div>
-                <div class="col-md-5">
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <section id="about-us">
-        <div class="container w-100 section-4 w-100 p-4">
-            <div class="row margin-header-section-3">
-                <div class="col-md-6 justify-content-center margin-section-4">
-                    <h1 class="justify-content-center" data-aos="fade-up" data-aos-duration="700">
-                        <img class="logo-header" src="/asset/img/main/logo.webp">
-                    </h1>
-                </div>
-                <div class="col-md-6 justify-content-center margin-early-section-4">
-                    <p class="text-early-section-4">Be at the Forefront of Technology through Entrepreneurship &
-                        Research
-                    </p>
-                    <p class="text-paragraph-section-4">A 5-day program designed for students interested in business
-                        or STEM (Science, Tech, Engineering, Math) streams, providing real-life implementation in the
-                        entrepreneurship & research field with tangible outcomes.
-                    </p>
-                    <p class="text-date-section-4">
-                        <span class="text-date-section-4">From career exploring to resume building and networking, you
-                            get to have it all!
-                        </span>
-                    </p>
-                    <div class="d-flex align-items-center">
-                        <img class="num1" src="asset/img/icons/bi_calendar-date.png" alt="">
-                        <h2 class="t-box1 rounded-4 w-100 ps-3 d-flex align-items-center">3 - 7 January 2023
-                        </h2>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <img class="num1" src="asset/img/icons/carbon_location.png" alt="">
-                        <h2 class="t-box1 rounded-4 w-100 ps-3 d-flex align-items-center">Singapore
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg px-lg-5 p-md-2">
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-scroll px-lg-5 p-md-2 nav-not-active">
         <div class="container">
             <img class="navbar-pic" src="/asset/img/LOGO GIP.webp" alt="">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -132,16 +68,91 @@
         </div>
     </nav>
 
-    <section id="about-us">
-        <div class="container w-100 section-5 w-100 p-4 example">
-            <div class="row margin-header-section-3">
-                <div class="col-md-6 justify-content-center margin-section-4">
-                    <p class="text-early-section-5">FOR<br> 1,950 USD,<br> YOU WILL GET TO</p>
-                    <p class="text-title-section-6">Apply Before November 2022</p>
-                    <p class="text-desc-section-4">Aim for the scholarship!
-                    </p>
+    <!-- container-fluid header-bg w-100 d-flex justify-content-center -->
+    <div id="section-header" class="section-header  header-bg  position-relative">
+        <div class="container w-100">
+            <div class="row justify-content-end align-items-center" style="height:100vh">
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+                    <h3>
+                        <p class="text-title-section-4">
+                            Do you know what does Larry Page, founder of Google and Charles Pfizer, founder of Pfizer
+                            have in common?
+                        </p>
+                    </h3>
                 </div>
-                <div class="col-md-5 justify-content-center margin-early-section-5">
+            </div>
+
+            <div class="row justify-content-start align-items-center" style="height:100vh">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+                    <h3>
+                        <p class="text-title-section-5">
+                            They are the epitome of how their passion could turn into successful business enterprise and
+                            groundbreaking invention.
+                        </p>
+                    </h3>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center" style="height:100vh">
+            <div class="col-12 pb-5">
+                <h1 class="make-passion text-center" data-aos="fade" data-aos-duration="20000">
+                    Now is your turn to
+                    make your passion into action!
+                </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="about-us">
+        <div class="container w-100 section-4 w-100">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="">
+                        <img class="logo-header logo-active" id="logo-header" src="/asset/img/main/logo.webp">
+                    </h1>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="700">
+                    <p class="text-early-section-4">
+                        Be at the Forefront of Technology through Entrepreneurship &
+                        Research
+                    </p>
+                    <p class="text-paragraph-section-4">
+                        A 5-day program designed for students interested in business
+                        or STEM (Science, Tech, Engineering, Math) streams, providing real-life implementation in
+                        the
+                        entrepreneurship & research field with tangible outcomes.
+                    </p>
+                    <p class="text-date-section-4">
+                        From <span class="bg-stabilo px-2 rounded">career exploring</span> to <span
+                            class="bg-stabilo-rev px-2 rounded">resume
+                            building</span> and <span class="bg-stabilo px-2 rounded">networking</span>,
+                        you
+                        get to have it all!
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <img class="num1" src="asset/img/icons/bi_calendar-date.png" alt="">
+                        <h2 class="t-box1 rounded-4 w-100 ps-3 d-flex align-items-center">3 - 7 January 2023
+                        </h2>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img class="num1" src="asset/img/icons/carbon_location.png" alt="">
+                        <h2 class="t-box1 rounded-4 w-100 ps-3 d-flex align-items-center">Singapore
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-end justify-content-center">
+                <div class="col-md-6">
+                    <p class="text-early-section-5">FOR<br> 1,950 USD,<br> YOU WILL GET TO</p>
+                </div>
+                <div class="col-md-5">
                     <ol class="text-paragraph-section-5" type="1">
                         <li>
                             Develop academic and technical skills from real professionals.
@@ -162,8 +173,14 @@
                             Have the chance to implement new knowledge into solid project output.
                         </li>
                     </ol>
-                    <!-- </span>
-                    </p> -->
+                </div>
+
+                <div class="my-5"></div>
+
+                <div class="col-md-6">
+                    <p class="text-title-section-6">Apply Before November 2022</p>
+                </div>
+                <div class="col-md-5">
                     <p class="text-paragraph-section-5">Your application will be reviewed on a first-come-first-serve
                         basis. Some applications will be subject to interview prior to receiving unconditional offers.
                     </p>
@@ -171,15 +188,27 @@
                         <span class="text-early-section-6">Grab the early bird discount</span>
                     </p>
                     <p class="text-date-section-5">05 September 2022 - 21 October 2022</p>
+                </div>
+
+                <div class="my-5"></div>
+
+                <div class="col-md-6">
+                    <p class="text-desc-section-4">
+                        Aim for the scholarship!
+                    </p>
+                </div>
+                <div class="col-md-5">
                     <p class="text-paragraph-section-4">If you are interested in joining the Global Immersion
                         Program but need help in funding the program fee, you are welcome to apply for the
                         scholarship. We offer a full-ride, need-based scholarship to both Business and Science
                         Research Program. For more information, click here.
                     </p>
                 </div>
+                <div class="my-5"></div>
             </div>
         </div>
     </section>
+
 
 
     <div id="section-6">
@@ -192,7 +221,7 @@
                         </h2>
                     </div>
                     <div class="container section-7 w-100">
-                        <div class="row margin-header-section-3">
+                        <div class="row align-items-center">
                             <div class="col-md-6 justify-content-center margin-early-section-7">
                                 <h1 class="justify-content-end">
                                     <img class="logo-header-2" src="/asset/img/bip/LOGO BIP.webp">
@@ -205,13 +234,14 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-12">
                         <h2 class="text-center">
                             <span class="subtitle-what-learn">What you’ll learn</span>
                         </h2>
                     </div>
-                    <div class="row margin-header-section-3">
-                        <div class="col-md-6 justify-content-end margin-section-4">
+                    <div class="row align-items-stretch">
+                        <div class="col-md-5">
                             <p>
                                 <span class="what-you-learn-bip">
                                     Problem Identification
@@ -234,7 +264,10 @@
                                 </span>
                             </p>
                         </div>
-                        <div class="col-md-6 justify-content-center margin-early-section-8">
+                        <div class="col-md-2 text-center d-flex justify-content-center">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="col-md-5 text-end">
                             <p>
                                 <span class="what-you-learn-srip" style="margin-right: 1vh;">
                                     Genetic Engineering
@@ -266,8 +299,8 @@
                             <span class="subtitle-what-learn">Your target major</span>
                         </h2>
                     </div>
-                    <div class="row margin-header-section-3">
-                        <div class="col-md-6 justify-content-end margin-section-4">
+                    <div class="row align-items-stretch">
+                        <div class="col-md-5">
                             <p>
                                 <span class="what-you-learn-bip">
                                     <img class="num1" src="asset/img/icons/business_black.png" width="5%" alt="">
@@ -286,7 +319,10 @@
                                 </span>
                             </p>
                         </div>
-                        <div class="col-md-6 justify-content-center margin-early-section-8">
+                        <div class="col-md-2 text-center d-flex justify-content-center">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="col-md-5 text-end">
                             <p>
                                 <span class="what-you-learn-srip" style="margin-right: 1vh;">
                                     <img class="num1" src="asset/img/icons/akar-icons_gear.png" width="6%" alt="">
@@ -322,91 +358,96 @@
                     </div>
 
 
-
                     <div class="col-md-12">
                         <h2 class="text-center">
                             <span class="subtitle-what-learn">Your activities</span>
                         </h2>
                     </div>
-                    <div class="row margin-header-section-3">
-                        <div class="col-md-6 justify-content-end margin-section-4">
-                            <ol type="1">
-                                <li>
-                                    Business mentoring
-                                </li>
-                                <li>
-                                    Visits to Singapore’s start-ups, incubators, accelerators and venture capitalists
-                                    ecosystem area
-                                </li>
-                                <li>
-                                    Network with startup and tech founders, and students from the top business
-                                    university
-                                </li>
-                                <li>
-                                    Campus tour to Singapore’s top universities
-                                </li>
-                            </ol>
+                    <div class="row align-items-stretch">
+                        <div class="col-md-5">
+                            <h5>
+                                <ol type="1">
+                                    <li>
+                                        Business mentoring
+                                    </li>
+                                    <li>
+                                        Visits to Singapore’s start-ups, incubators, accelerators and venture
+                                        capitalists
+                                        ecosystem area
+                                    </li>
+                                    <li>
+                                        Network with startup and tech founders, and students from the top business
+                                        university
+                                    </li>
+                                    <li>
+                                        Campus tour to Singapore’s top universities
+                                    </li>
+                                </ol>
+                            </h5>
                         </div>
-                        <div class="col-md-6 justify-content-center margin-early-section-8">
-                            <ol type="1">
-                                <li>
-                                    Scientific research mentoring
-                                </li>
-                                <li>
-                                    Visits to science centre, laboratories, and robotic centres.
-                                </li>
-                                <li>
-                                    Network with professors from top universities
-                                </li>
-                                <li>
-                                    Campus tour to Singapore’s top universities
-                                </li>
-                            </ol>
+                        <div class="col-md-2 text-center d-flex justify-content-center">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <h5>
+                                <ol type="1">
+                                    <li>
+                                        Scientific research mentoring
+                                    </li>
+                                    <li>
+                                        Visits to science centre, laboratories, and robotic centres.
+                                    </li>
+                                    <li>
+                                        Network with professors from top universities
+                                    </li>
+                                    <li>
+                                        Campus tour to Singapore’s top universities
+                                    </li>
+                                </ol>
+                            </h5>
                         </div>
                     </div>
-
-
 
                     <div class="col-md-12">
                         <h2 class="text-center">
                             <span class="subtitle-what-learn">Your final output</span>
                         </h2>
                     </div>
-                    <div class="row margin-header-section-3">
-                        <div class="col-md-6 justify-content-end margin-section-4">
-                            <p>
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <img class="num1" src="asset/img/icons/carbon_group-presentation.png"
-                                            width="100%" alt="">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <span class="what-you-learn-bip">
-                                            Bussiness
-                                        </span>
-                                        <span class="what-you-learn-bip-polos">pitch to real angel investors with a
-                                            possible seed funding </span>
-                                    </div>
+                    <div class="row align-items-stretch">
+                        <div class="col-md-5">
+                            <div class="d-flex align-items-center">
+                                <div class="p-2" style="width:15%">
+                                    <img class="num1 w-100" src="asset/img/icons/carbon_group-presentation.png"
+                                        width="100%" alt="">
                                 </div>
-                            </p>
-
+                                <div class="" style="width:85%">
+                                    <span class="what-you-learn-bip">
+                                        Bussiness
+                                    </span>
+                                    <span class="what-you-learn-bip-polos">pitch to real angel investors with a
+                                        possible seed funding </span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 justify-content-center margin-early-section-8">
+                        <div class="col-md-2 text-center d-flex justify-content-center">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="col-md-5 text-end">
                             <p>
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <img class="num1"
-                                            src="asset/img/icons/healthicons_i-certificate-paper-outline.png"
-                                            width="100%" alt="">
+                            <div class="row">
+                                <div class="d-flex align-items-center">
+                                    <div class="" style="width:10%">
+                                        <img class="num1 w-100"
+                                            src="asset/img/icons/healthicons_i-certificate-paper-outline.png">
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="" style="width:90%">
                                         <span class="what-you-learn-srip-polos">Presentation in a </span>
                                         <span class="what-you-learn-srip">
                                             mini research symposium
                                         </span>
-
                                     </div>
                                 </div>
+                            </div>
                             </p>
 
                         </div>
@@ -420,14 +461,14 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script>
         AOS.init();
@@ -463,27 +504,39 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script>
-        // When the user scrolls down 20px from the top of the document, slide down the navbar
-        window.onscroll = function () {
-            scrollFunction()
-        };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 1550 || document.documentElement.scrollTop > 1550) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-90px";
-            }
-        }
-    </script>
-    <script type="text/javascript">
+
         $(function () {
             var navbar = $('.navbar');
             $(window).scroll(function () {
-                if ($(window).scrollTop() <= 40) {
-                    navbar.removeClass('navbar-scroll');
+                // Logo
+                if ($(window).scrollTop() >= 2600) {
+                    $('#logo-header').removeClass('logo-active')
+                    $('#logo-header').addClass('logo-not-active')
                 } else {
-                    navbar.addClass('navbar-scroll');
+                    $('#logo-header').removeClass('logo-not-active')
+                    $('#logo-header').addClass('logo-active')
+                }
+
+                // Navbar 
+                if ($(window).scrollTop() >= 2750) {
+                    navbar.removeClass('nav-not-active');
+                    navbar.addClass('nav-active');
+
+
+                } else {
+                    navbar.removeClass('nav-active');
+                    navbar.addClass('nav-not-active');
+
+                }
+
+                // Section 
+                if ($(window).scrollTop() >= 400) {
+                    $('#section-header').removeClass('header-bg')
+                    $('#section-header').addClass('header-bg-2')
+                } else {
+                    $('#section-header').addClass('header-bg')
+                    $('#section-header').removeClass('header-bg-2')
                 }
             });
         });
