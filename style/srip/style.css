@@ -40,16 +40,13 @@ body, h1, h2,h3,h4,h5,h6 {
 }
 
 @media only screen and (max-width: 768px) {
-<<<<<<< HEAD
   .text-header {
     font-size: 18px !important;
   }
-=======
   .text-title-section-3{
     font-size: 35px !important;
   }
 
->>>>>>> ef0c85ace0761744c4774ea22082a785b1b3c7c4
   .text-header-italic{
     margin-bottom: 5vh !important;
   }
@@ -297,7 +294,7 @@ body, h1, h2,h3,h4,h5,h6 {
   .button-booking{
     font-size: 26px !important;
     background: #5192B7;
-    color: #F0F0F0;
+    color: #FFFFFF;
     font-weight: 700 !important;
     border-radius: 30px !important;
   }
@@ -332,7 +329,7 @@ body, h1, h2,h3,h4,h5,h6 {
   .button-booking{
     font-size: 36px;
     background: #5192B7;
-    color: #F0F0F0;
+    color: #FFFFFF;
     font-weight: 700;
     border-radius: 30px;
   }
@@ -1025,14 +1022,14 @@ input:checked + label {
 .button-booking{
   font-size: 36px;
   background: var(--orange);
-  color: #F0F0F0;
+  color: #FFFFFF;
   font-weight: 700;
   border-radius: 5px;
 }
 
 .button-booking:hover {
   background: var(--blue);
-  color: #F0F0F0;
+  color: #FFFFFF;
   font-weight: 700;
 }
 
@@ -1040,13 +1037,13 @@ input:checked + label {
 .button-nav{
   font-size: 18px;
   background: #5192B7;
-  color: #F0F0F0;
+  color: #FFFFFF;
   font-weight: bold;
 }
 
 .button-nav:hover {
   background: #85387E;
-  color: #F0F0F0;
+  color: #FFFFFF;
   font-weight: bold;
 }
 
