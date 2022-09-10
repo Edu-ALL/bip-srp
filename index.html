@@ -22,24 +22,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="asset/img/favicon/favicon-16x16.png">
     <title>Immersion Program</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <style>
-        .navbar {
-            transition: all 0.3s !important;
-        }
 
-        .nav-not-active {
-            top: -100px !important;
-        }
-
-        .nav-active {
-            top: 0 !important;
-        }
     </style>
 </head>
 
 
 <body>
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-scroll px-lg-5 p-md-2 nav-not-active">
+    <nav id="navbar"
+        class="navbar fixed-top navbar-expand-lg navbar-scroll px-lg-5 p-md-2 nav-not-active nav-not-active-sm">
         <div class="container">
             <a href="index.html"><img class="navbar-pic" src="/asset/img/LOGO GIP.webp" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -98,11 +90,15 @@
     </div>
 
     <div class="container">
-        <div class="row align-items-center" style="height:100vh">
+        <div class="row align-items-center passion">
             <div class="col-12 pb-5">
                 <h1 class="make-passion text-center" data-aos="fade" data-aos-duration="20000">
-                    Now is your turn to
-                    make your passion into action!
+                    <div id="passionString">
+                        <p class="fw-bold">
+                            Now is your turn to make your passion into action!
+                        </p>
+                    </div>
+                    <span id="typed"></span>
                 </h1>
             </div>
         </div>
@@ -112,7 +108,7 @@
     <section id="about-us">
         <div class="container w-100 section-4 w-100">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 g-3">
                     <h1 class="">
                         <img class="logo-header logo-active" id="logo-header" src="/asset/img/main/logo.webp">
                     </h1>
@@ -150,7 +146,10 @@
 
             <div class="row align-items-end justify-content-center">
                 <div class="col-md-6">
-                    <p class="text-early-section-5">FOR<br> 1,950 USD,<br> YOU WILL GET TO</p>
+                    <p class="text-early-section-5">FOR<br> <span class="bg-stabilo text-white px-2 rounded">1,950
+                            USD</span>,<br>
+                        YOU WILL GET
+                        TO</p>
                 </div>
                 <div class="col-md-5">
                     <ol class="text-paragraph-section-5" type="1">
@@ -172,7 +171,7 @@
                     </ol>
                 </div>
 
-                <div class="my-5"></div>
+                <div class="my-md-5"></div>
 
                 <div class="col-md-6">
                     <p class="text-title-section-6">Apply Before November 2022</p>
@@ -187,7 +186,7 @@
                     <p class="text-date-section-5">05 September 2022 - 21 October 2022</p>
                 </div>
 
-                <div class="my-5"></div>
+                <div class="my-md-5"></div>
 
                 <div class="col-md-6">
                     <p class="text-desc-section-4">
@@ -218,15 +217,15 @@
                         </h2>
                     </div>
                     <div class="container section-7 w-100">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 justify-content-center margin-early-section-7">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-md-3 col-5">
                                 <h1 class="justify-content-end">
-                                    <img class="logo-header-2" src="/asset/img/bip/LOGO BIP.webp">
+                                    <img class="w-100" src="/asset/img/bip/LOGO BIP.webp">
                                 </h1>
                             </div>
-                            <div class="col-md-6 justify-content-end margin-early-section-6">
+                            <div class="col-md-3 col-5">
                                 <h1 class="justify-content-center">
-                                    <img class="logo-header-2" src="/asset/img/srip/LOGO SRIP.webp">
+                                    <img class="w-100" src="/asset/img/srip/LOGO SRIP.webp">
                                 </h1>
                             </div>
                         </div>
@@ -237,8 +236,8 @@
                             <span class="subtitle-what-learn">What you’ll learn</span>
                         </h2>
                     </div>
-                    <div class="row align-items-stretch">
-                        <div class="col-md-5">
+                    <div class="row align-items-stretch justify-content-between  mb-md-0 mb-4">
+                        <div class="col-md-5 col-6">
                             <p>
                                 <span class="what-you-learn-bip">
                                     Problem Identification
@@ -261,10 +260,10 @@
                                 </span>
                             </p>
                         </div>
-                        <div class="col-md-2 text-center d-flex justify-content-center">
+                        <div class="col-md-2 text-center d-md-flex justify-content-center d-none">
                             <div class="vertical-line"></div>
                         </div>
-                        <div class="col-md-5 text-end">
+                        <div class="col-md-5 col-6 text-end">
                             <p>
                                 <span class="what-you-learn-srip" style="margin-right: 1vh;">
                                     Genetic Engineering
@@ -296,8 +295,8 @@
                             <span class="subtitle-what-learn">Your target major</span>
                         </h2>
                     </div>
-                    <div class="row align-items-stretch">
-                        <div class="col-md-5">
+                    <div class="row align-items-stretch justify-content-between  mb-md-0 mb-4">
+                        <div class="col-md-5 col-6">
                             <p>
                                 <span class="what-you-learn-bip">
                                     <img class="num1" src="asset/img/icons/business_black.png" width="5%" alt="">
@@ -316,10 +315,10 @@
                                 </span>
                             </p>
                         </div>
-                        <div class="col-md-2 text-center d-flex justify-content-center">
+                        <div class="col-md-2 text-center d-md-flex justify-content-center d-none">
                             <div class="vertical-line"></div>
                         </div>
-                        <div class="col-md-5 text-end">
+                        <div class="col-md-5 col-6 text-end">
                             <p>
                                 <span class="what-you-learn-srip" style="margin-right: 1vh;">
                                     <img class="num1" src="asset/img/icons/akar-icons_gear.png" width="6%" alt="">
@@ -360,9 +359,9 @@
                             <span class="subtitle-what-learn">Your activities</span>
                         </h2>
                     </div>
-                    <div class="row align-items-stretch">
-                        <div class="col-md-5">
-                            <h5>
+                    <div class="row align-items-stretch justify-content-between  mb-md-0 mb-4">
+                        <div class="col-md-5 col-6">
+                            <h5 class="text-activity">
                                 <ol type="1">
                                     <li>
                                         Business mentoring
@@ -382,11 +381,11 @@
                                 </ol>
                             </h5>
                         </div>
-                        <div class="col-md-2 text-center d-flex justify-content-center">
+                        <div class="col-md-2 text-center d-md-flex justify-content-center d-none">
                             <div class="vertical-line"></div>
                         </div>
-                        <div class="col-md-5">
-                            <h5>
+                        <div class="col-md-5 col-6">
+                            <h5 class="text-activity">
                                 <ol type="1">
                                     <li>
                                         Scientific research mentoring
@@ -410,42 +409,70 @@
                             <span class="subtitle-what-learn">Your final output</span>
                         </h2>
                     </div>
-                    <div class="row align-items-stretch">
-                        <div class="col-md-5">
+                    <div class="row align-items-md-stretch align-items-center justify-content-between  mb-md-0 mb-4">
+                        <div class="col-md-5 col-6">
                             <div class="d-flex align-items-center">
-                                <div class="p-2" style="width:15%">
-                                    <img class="num1 w-100" src="asset/img/icons/carbon_group-presentation.png"
+                                <div class="p-2" style="width:20%">
+                                    <img class="num1 w-100 px-md-3" src="asset/img/icons/carbon_group-presentation.png"
                                         width="100%" alt="">
                                 </div>
-                                <div class="" style="width:85%">
-                                    <span class="what-you-learn-bip">
-                                        Bussiness
-                                    </span>
-                                    <span class="what-you-learn-bip-polos">pitch to real angel investors with a
-                                        possible seed funding </span>
+                                <div class="" style="width:80%">
+                                    <span class="what-you-learn-bip">Bussiness</span>
+                                    <span class="what-you-learn-bip-polos">
+                                        pitch to real angel investors with a</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 text-center d-flex justify-content-center">
+                        <div class="col-md-2 text-center d-md-flex justify-content-center d-none">
                             <div class="vertical-line"></div>
                         </div>
-                        <div class="col-md-5 text-end">
-                            <p>
-                                <div class="row">
-                                    <div class="d-flex align-items-center">
-                                        <div class="" style="width:10%">
-                                            <img class="num1 w-100"
-                                                src="asset/img/icons/healthicons_i-certificate-paper-outline.png">
-                                        </div>
-                                        <div class="" style="width:90%">
-                                            <span class="what-you-learn-srip-polos">Presentation in a </span>
-                                            <span class="what-you-learn-srip">
-                                                mini research symposium
-                                            </span>
-                                        </div>
-                                    </div>
+                        <div class="col-md-5 col-6 text-end">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <div class="" style="width:20%">
+                                    <img class="num1 w-100 px-md-4"
+                                        src="asset/img/icons/healthicons_i-certificate-paper-outline.png">
                                 </div>
-                            </p>
+                                <div class="" style="width:80%"><span class="what-you-learn-bip-polos">Presentation
+                                        in a</span>
+                                    <span class="what-you-learn-srip">
+                                        mini research symposium
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12">
+                        <h2 class="text-center">
+                            <span class="subtitle-what-learn">Next Level</span>
+                        </h2>
+                    </div>
+                    <div class="row align-items-md-stretch align-items-center justify-content-between  mb-md-0 mb-4">
+                        <div class="col-md-5 col-6">
+                            <h5 class="text-activity">
+                                Running your own business
+                            </h5>
+                        </div>
+                        <div class="col-md-2 text-center d-md-flex justify-content-center d-none">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="col-md-5 col-6 text-end">
+                            <h5 class="text-activity">
+                                Publishing your own research paper
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-md-stretch align-items-center justify-content-between">
+                        <div class="col-md-5 col-6 pt-3 pb-5">
+                            <a href="#" class="btn btn-bip w-100">I’m the future entrepreneur!</a>
+                        </div>
+                        <div class="col-md-2 text-center d-md-flex justify-content-center d-none">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="col-md-5 col-6 pt-3 pb-5 text-end">
+                            <a href="#" class="btn btn-srip w-100">I’m the future researcher!</a>
                         </div>
                     </div>
                 </section>
@@ -455,41 +482,38 @@
 
 
 
-
-    <div class="container-fluid">
+    <div class="container-fluid skills">
         <div class="row row-cols-md-12 row-cols-1 align-items-center py-5" style="background-color: #FE7F2E;">
             <div class="container">
-                <div class="col-md-12" style="margin-bottom: 7vh;">
-                    <h2 class="text-center">
-                        <span class="subtitle-skill-obtain">Skills to obtain</span>
-                    </h2>
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom: 7vh;">
+                        <h2 class="text-center">
+                            <span class="subtitle-skill-obtain">Skills to obtain</span>
+                        </h2>
+                    </div>
                 </div>
 
                 <div class="row justify-content-center" data-aos="fade-up">
-                    <div class="col-md-12">
-                        <div class="row row-cols-md-3 row-cols-2">
+                    <div class="col-md-10">
+                        <div class="row row-cols-md-4 row-cols-2" data-aos="fade-up">
                             <div class="col-md-3 text-center">
-                                <div class="icon-img p-2">
-                                    <img src="asset/img/icons/business.webp" class="mr-auto ml-auto">
-                                </div>
+                                <img src="asset/img/icons/business.webp" class="icon-img">
                                 <p class="icon-desc">Entrepreneurship or <br> Research skills</p>
                             </div>
                             <div class="col-md-3 text-center">
-                                <div class="icon-img p-2">
-                                    <img src="asset/img/icons/problem solving.webp" class="mr-auto ml-auto">
-                                </div>
+
+                                <img src="asset/img/icons/problem solving.webp" class="icon-img">
+
                                 <p class="icon-desc">Problem solving</p>
                             </div>
                             <div class="col-md-3 text-center">
-                                <div class="icon-img p-2">
-                                    <img src="asset/img/icons/cross discipline.webp" class="mr-auto ml-auto">
-                                </div>
-                                <p class="icon-desc">Cross-disciplinary thinking</p>
+
+                                <img src="asset/img/icons/cross discipline.webp" class="icon-img">
+
+                                <p class="icon-desc">Cross-disciplinary <br> thinking</p>
                             </div>
                             <div class="col-md-3 text-center">
-                                <div class="icon-img p-2">
-                                    <img src="asset/img/icons/networking.webp" class="mr-auto ml-auto">
-                                </div>
+                                <img src="asset/img/icons/networking.webp" class="icon-img">
                                 <p class="icon-desc">Networking</p>
                             </div>
                         </div>
@@ -500,8 +524,8 @@
     </div>
 
     <div id="section-3" data-aos="fade-up" data-aos-duration="1500">
-        <div class="container-fluid">
-            <div class="row margin-header-section-3">
+        <div class="container my-5">
+            <div class="row g-3">
                 <div class="col-md-6 justify-content-center" data-aos="fade-up">
                     <div class="testi-card text-center position-relative" style="background: rgba(255, 255, 255, 0)"
                         data-aos="fade-up" data-aos-anchor-placement="top-center">
@@ -528,7 +552,8 @@
                             <div class="testi-content">
                                 <div class="card-body d-flex">
                                     <p class="card-text fw-bold">
-                                        “I didn't even know I might've been able to do until I join this program”
+                                        “I didn't even know I might've been able to do until I join this
+                                        program”
                                     </p>
                                 </div>
                             </div>
@@ -554,7 +579,8 @@
                             </div>
                             <p class="pt-3 pb-0 my-0 text-white" style="text-align: end; padding-right: 12px"> <span
                                     class="fw-bold"
-                                    style="color: #FFFFFF;  font-size: 22px; font-weight: 600;">Fayra</span> </p>
+                                    style="color: #FFFFFF;  font-size: 22px; font-weight: 600;">Fayra</span>
+                            </p>
                             <p class="py-0 text-white" style="font-size: 22px; text-align: end; padding-right: 12px">
                                 (Science Research Program 2020)</p>
                         </div>
@@ -569,14 +595,16 @@
                             <div class="testi-content">
                                 <div class="card-body d-flex">
                                     <p class="card-text fw-bold">
-                                        “Really helped me narrow down possible career choices that I would like to
+                                        “Really helped me narrow down possible career choices that I
+                                        would like to
                                         pursue”
                                     </p>
                                 </div>
                             </div>
                             <p class="pt-3 pb-0 my-0 text-white" style="text-align: end; padding-right: 12px"> <span
                                     class="fw-bold"
-                                    style="color: #FFFFFF;  font-size: 22px; font-weight: 600;">Khiara</span> </p>
+                                    style="color: #FFFFFF;  font-size: 22px; font-weight: 600;">Khiara</span>
+                            </p>
                             <p class="py-0 text-white" style="font-size: 22px; text-align: end; padding-right: 12px">
                                 (Science Research Program 2019)</p>
                         </div>
@@ -589,7 +617,8 @@
                             <div class="testi-content">
                                 <div class="card-body d-flex">
                                     <p class="card-text fw-bold">
-                                        “It has a lot of study activities while it also still gives us some free time to
+                                        “It has a lot of study activities while it also still gives us
+                                        some free time to
                                         enjoy the country itself”
                                     </p>
                                 </div>
@@ -609,7 +638,8 @@
                             <div class="testi-content">
                                 <div class="card-body d-flex">
                                     <p class="card-text fw-bold">
-                                        “I didn't even know I might've been able to do until I join this program”
+                                        “I didn't even know I might've been able to do until I join this
+                                        program”
                                     </p>
                                 </div>
                             </div>
@@ -626,55 +656,61 @@
     </div>
 
 
+    <div class="my-5"> </div>
+
     <div id="section-3">
         <div class="container-fluid">
-            <div class="row margin-header-section-3 mb-4">
-                <div class="col-md-5 justify-content-center" data-aos="fade-up">
-                    <h1 class="justify-content-center">
-                        <img class="logo-asset" src="/asset/img/bip/asset form.webp">
-                    </h1>
-                </div>
-                <div class="col-md-6 justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom"">
-                    <span class=" text-title-section-3">I WANT TO APPLY TO THIS PROGRAM!</span>
-                    <h3>
-                        <span class="text-price-section-form">I am
-                        </span>
-                        <input id="1" type="checkbox" name="1" />
-                        <label for="1">Grade 8</label>
-                        <input id="2" type="checkbox" name="2" />
-                        <label for="2">Grade 9</label>
-                        <input id="3" type="checkbox" name="3" />
-                        <label for="3">Grade 10</label>
-                        <input id="4" type="checkbox" name="4" />
-                        <label for="4">Grade 11</label>
-                        <input id="5" type="checkbox" name="5" />
-                        <label for="5">Grade 12</label>
-                    </h3>
-                    <h3>
-                        <span class="text-price-section-form">I am from
-                        </span>
-                        <input id="11" type="checkbox" name="11" />
-                        <label for="11">Indonesia</label>
-                        <input id="21" type="checkbox" name="21" />
-                        <label for="21">Malaysia</label>
-                        <input id="31" type="checkbox" name="31" />
-                        <label for="31">Singapore</label>
-                        <input id="41" type="checkbox" name="41" />
-                        <label for="41">Thailand</label>
-                        <input id="51" type="checkbox" name="51" />
-                        <label for="51">Philipines</label>
-                    </h3>
-                    <h3>
-                        <span class="text-price-section-form">I am interested in
-                        </span>
-                        <input id="12" type="checkbox" name="12" />
-                        <label for="12" class="intertested-checkbox">Business Immersion</label>
-                        <input id="22" type="checkbox" name="22" />
-                        <label for="22" class="intertested-checkbox">Science Research Immersion</label>
-                    </h3>
-                    <div class="col text-right mt-4">
-                        <a href="#join" class="btn button-booking btn-orange fs-5 w-md" role="button">Take Me to the
-                            Next Step</a>
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-md-5 text-center" data-aos="fade-up">
+                        <h1 class="justify-content-center">
+                            <img class="logo-asset" src="/asset/img/bip/asset form.webp">
+                        </h1>
+                    </div>
+                    <div class="col-md-7 justify-content-center" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
+                        <div class="text-title-section-3 fw-bold">I WANT TO APPLY TO THIS PROGRAM!</div>
+                        <h3>
+                            <span class="text-price-section-form">I am
+                            </span>
+                            <input id="1" type="radio" name="grade" />
+                            <label for="1">Grade 8</label>
+                            <input id="2" type="radio" name="grade" />
+                            <label for="2">Grade 9</label>
+                            <input id="3" type="radio" name="grade" />
+                            <label for="3">Grade 10</label>
+                            <input id="4" type="radio" name="grade" />
+                            <label for="4">Grade 11</label>
+                            <input id="5" type="radio" name="grade" />
+                            <label for="5">Grade 12</label>
+                        </h3>
+                        <h3>
+                            <span class="text-price-section-form">I am from
+                            </span>
+                            <input id="11" type="radio" name="country" />
+                            <label for="11">Indonesia</label>
+                            <input id="21" type="radio" name="country" />
+                            <label for="21">Malaysia</label>
+                            <input id="31" type="radio" name="country" />
+                            <label for="31">Singapore</label>
+                            <input id="41" type="radio" name="country" />
+                            <label for="41">Thailand</label>
+                            <input id="51" type="radio" name="country" />
+                            <label for="51">Philipines</label>
+                        </h3>
+                        <h3>
+                            <span class="text-price-section-form">I am interested in
+                            </span>
+                            <input id="12" type="checkbox" name="12" />
+                            <label for="12" class="intertested-checkbox">Business Immersion</label>
+                            <input id="22" type="checkbox" name="22" />
+                            <label for="22" class="intertested-checkbox">Science Research Immersion</label>
+                        </h3>
+                        <div class="col text-right mt-4">
+                            <a href="#join" class="btn button-booking btn-orange fs-5 w-md" role="button">Take
+                                Me to the
+                                Next Step</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -683,9 +719,9 @@
 
 
     <div id="section-6" class="section-6" data-aos="fade-up">
-        <div class="container-fluid">
-            <div class="row margin-header-section-5">
-                <div class="col-md-7 justify-content-center text-section-2 mt-md-0 mt-3">
+        <div class="container mt-5">
+            <div class="row align-items-center g-3">
+                <div class="col-md-7">
                     <p class="text-title-section-7">Want to Take It to the Next Level?</p>
                     <h3 class="mt-md-0 mt-3">
 
@@ -693,54 +729,59 @@
                             Research Mentoring Program!
                         </p>
 
-                        <p class="text-header-italic">A 1-on-1 coaching with ALL-in Eduspace expert mentors and industry
-                            or research professionals, where you can turn your business pitch or simple research
+                        <p class="text-header-italic">A 1-on-1 coaching with ALL-in Eduspace expert mentors
+                            and industry
+                            or research professionals, where you can turn your business pitch or simple
+                            research
                             findings into a solid output.
                         </p>
                     </h3>
                 </div>
-                <div class="col-md-4 justify-content-center">
-                    <img class="logo-asset-2" src="/asset/img/main/asset-take-it-to-the-next-level.webp">
+                <div class="col-md-5">
+                    <img class="w-100" src="/asset/img/main/asset-take-it-to-the-next-level.webp">
                 </div>
-                <div class="accordion" id="faqs">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button term-title-blue collapsed" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#faq1">
-                                <div class="accordion-text-header">Entrepreneurship Mentoring Program
-                                </div>
 
-                            </button>
-                        </h2>
-                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqs">
-                            <div class="accordion-body term-body">
-                                <p>
+                <div class="col-12">
+                    <div class="accordion" id="faqs">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button term-title-blue collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <div class="accordion-text-header">Entrepreneurship Mentoring Program
+                                    </div>
+
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                <div class="accordion-body term-body">
+                                    <p>
                                     <ul>
                                         <li>
                                             Build business from scratch
                                         </li>
                                         <li>
-                                            Obtain feedback directly from the market and experienced business founders
+                                            Obtain feedback directly from the market and experienced business
+                                            founders
                                         </li>
                                         <li>
                                             Solve real challenges of small and medium companies
                                         </li>
                                     </ul>
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item mt-2 border">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button term-title-blue collapsed collapsed" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#faq2">
-                                <div class="accordion-text-header">Science Research Mentoring Program
-                                </div>
-                            </button>
-                        </h2>
-                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqs">
-                            <div class="accordion-body term-body">
-                                <p>
+                        <div class="accordion-item mt-2 border">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button term-title-blue collapsed collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    <div class="accordion-text-header">Science Research Mentoring Program
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                <div class="accordion-body term-body">
+                                    <p>
                                     <ul>
                                         <li>
                                             Design of experiment template
@@ -749,14 +790,16 @@
                                             Solve real scientific problem
                                         </li>
                                         <li>
-                                            Able to use scientific analysis software and laboratorium equipments (if
+                                            Able to use scientific analysis software and laboratorium equipments
+                                            (if
                                             applicable)
                                         </li>
                                         <li>
                                             Full scientific research paper
                                         </li>
                                     </ul>
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -779,14 +822,14 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script>
         AOS.init();
@@ -822,11 +865,20 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script>
+
+        var typed = new Typed('#typed', {
+            stringsElement: '#passionString',
+            typeSpeed: 40,
+            loop: true,
+            fadeOut: true,
+            backDelay: 3000,
+        });
+
         $(function () {
             var navbar = $('.navbar');
             $(window).scroll(function () {
                 // Logo
-                if ($(window).scrollTop() >= 2600) {
+                if ($(window).scrollTop() >= 2630) {
                     $('#logo-header').removeClass('logo-active')
                     $('#logo-header').addClass('logo-not-active')
                 } else {
@@ -835,7 +887,7 @@
                 }
 
                 // Navbar 
-                if ($(window).scrollTop() >= 2750) {
+                if ($(window).scrollTop() >= 2650) {
                     navbar.removeClass('nav-not-active');
                     navbar.addClass('nav-active');
 
