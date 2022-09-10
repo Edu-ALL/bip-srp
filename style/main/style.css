@@ -64,6 +64,11 @@ body, h1, h2, h3, h4, h5, h6 {
     font-size: 20px !important;
   }
 
+  .text-activity-2 {
+    font-size: 20px !important;
+    margin-bottom: 3vh !important;
+  }
+
   .nav-not-active-sm {
     top: 0 !important;
   }
@@ -89,6 +94,7 @@ body, h1, h2, h3, h4, h5, h6 {
     margin-top: 10vh !important;
     color: var(--orange) !important;
     font-size: 40px !important;
+    scroll-margin-top: 10vh !important;
   }
 
   .text-early-section-6 {
@@ -152,6 +158,7 @@ body, h1, h2, h3, h4, h5, h6 {
   }
 
   .section-4 {
+    scroll-margin-top: 55vh !important;
     margin-top: 0vh !important;
     /* top: -200px; */
     /* height: 130vh !important; */
@@ -212,6 +219,7 @@ body, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 3px !important;
     font-size: 18px !important;
     /* white-space: nowrap; */
+    margin-right: 0 !important; 
     line-height: 0.5 !important;
     /* margin-left: 7vh; */
   }
@@ -258,6 +266,7 @@ body, h1, h2, h3, h4, h5, h6 {
   }
 
   .margin-header-section-3 {
+    scroll-margin-top: 55vh !important;
     margin-top: 3vh !important;
     margin-left: 1vh !important;
     margin-right: 1vh !important;
@@ -525,6 +534,11 @@ body, h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
 }
 
+.text-activity-2 {
+  font-size: 24px;
+  margin-bottom: 10vh;
+}
+
 .btn-bip {
   background: #243871;
   color: #fff !important;
@@ -587,6 +601,7 @@ body, h1, h2, h3, h4, h5, h6 {
   background-attachment: fixed;
   background-position: bottom right;
   margin-top: 20vh;
+  scroll-margin-top: 40vh;
   /* top: -200px; */
   /* height: 110vh; */
 }
@@ -725,6 +740,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .margin-header-section-3 {
+  scroll-margin-top: 40vh ;
   margin-top: 3vh;
   margin-left: 10vh;
   margin-right: 15vh;
@@ -946,7 +962,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .text-date-section-4 {
   font-family: "SFProBold";
-  font-size: 3em;
+  font-size: 2.6em;
   color: var(--black);
   /* font-weight: 300; */
   line-height: 1.2;
@@ -1065,12 +1081,12 @@ input:checked+label {
 
 .text-early-section-4 {
   font-family: "SFProBold";
-  font-size: 40px;
+  font-size: 3.5em;
   color: #156d76;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 1.2;
   /* margin-bottom: 2vh !important; */
-  margin-top: -6vh;
+  margin-top: -10vh;
 }
 
 .text-early-section-6 {
@@ -1091,6 +1107,7 @@ input:checked+label {
   line-height: 1.2;
   margin-bottom: 2vh !important;
   margin-top: 40vh;
+  scroll-margin-top: 30vh;
   text-shadow: 1px 1px 2px #000;
 }
 
