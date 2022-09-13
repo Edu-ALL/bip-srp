@@ -215,11 +215,11 @@ body, h1, h2, h3, h4, h5, h6 {
   }
 
   .text-title-section-4 {
-    color: #fff !important;
+    color: var(--black) !important;
     text-align: center;
     text-shadow: 1px 1px 2px #000;
-    /* margin-top: 3vh !important;
-    margin-bottom: 1vh !important; */
+    margin-top: 10em !important;
+    /* margin-bottom: 1vh !important;  */
     /* margin-left: 7vh; */
   }
 
@@ -362,7 +362,7 @@ body, h1, h2, h3, h4, h5, h6 {
     background: url('/asset/img/main/Headline\ 1_mobile.webp') !important;
     background-size: cover !important;
     background-position: right !important;
-    background-attachment: fixed;
+    background-attachment: fixed !important;
     margin-top: 0;
     height: 200vh !important;
   }
@@ -779,7 +779,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .margin-price {
-  padding: 10vh;
+  padding: 100vh;
 }
 
 .margin-early-section-4 {
@@ -930,7 +930,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .text-title-desc-exp-section-4 {
   font-family: "SFProBold";
-  font-size: 12px;
+  font-size: 18px;
   color: var(--black);
   font-weight: 900;
   line-height: 1.2;
@@ -1212,7 +1212,7 @@ input:checked+label {
   line-height: 1.2;
   /* margin-bottom: 1vh !important; */
   margin-top: 40vh;
-  scroll-margin-top: 30vh;
+  scroll-margin-top: 38vh;
   text-shadow: 1px 1px 2px #000;
 }
 
