@@ -6,7 +6,7 @@
   --yellow: #FCCA47;
   --blue: #243871;
   --darkblue: #06205B;
-  --blue-light: #00C6C2;
+  --tosca: #00C6C2;
 }
 
 @font-face {
@@ -42,6 +42,8 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 768px) {
+
+
   .subtitle-skill-obtain {
     font-size: 25px !important;
   }
@@ -85,7 +87,7 @@ body, h1, h2, h3, h4, h5, h6 {
   }
 
   .subtitle-our-team {
-    font-size: 40px !important;
+    font-size: 30px !important;
   }
 
   .text-early-section-5,
@@ -113,8 +115,9 @@ body, h1, h2, h3, h4, h5, h6 {
   }
 
   .text-title-section-7 {
-    font-size: 35px !important;
+    font-size: 40px !important;
     line-height: 1 !important;
+    margin-bottom: 2vh !important;
   }
 
   .text-paragraph-section-7 {
@@ -227,11 +230,13 @@ body, h1, h2, h3, h4, h5, h6 {
   .what-you-learn-bip {
     margin-left: 0px !important;
     margin-right: 5px !important;
+    padding: 0vh !important;
   }
 
   .what-you-learn-srip {
     margin-left: 5px !important;
     margin-right: 0px !important;
+    padding: 0vh !important;
   }
 
   .text-title-section-5 {
@@ -324,11 +329,16 @@ body, h1, h2, h3, h4, h5, h6 {
   .logo-asset {
     margin-top: 1vh !important;
     width: 90% !important;
+    display: none !important;
   }
 
   .logo-asset-2 {
     margin-top: 1vh !important;
     width: 90% !important;
+  }
+
+  .logo-asset-3{
+    display: none !important;
   }
 
   .header-bg {
@@ -510,6 +520,18 @@ body, h1, h2, h3, h4, h5, h6 {
   .portfolio-show {
     padding-top: 0rem !important;
   }
+
+  .icon-target-major{
+    width: 10% !important;
+  }
+
+  .disappear{
+    display: none !important;
+  }
+}
+
+.icon-target-major{
+  width: 6%;
 }
 
 .accordion-text-header {
@@ -596,7 +618,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .section-4 {
-  background: url('/asset/img/main/homepage\ bg.webp');
+  background: url('/asset/img/main/career_new.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom right;
@@ -607,7 +629,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .section-5 {
-  background: url('/asset/img/main/homepage\ bg.webp');
+  background: url('/asset/img/main/career_new.webp');
   background-size: cover;
   background-position: center;
   margin-top: 5vh;
@@ -616,7 +638,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .section-7 {
-  /* background: url('/asset/img/main/homepage\ bg.webp'); */
+  /* background: url('/asset/img/main/career_new.webp'); */
   background-size: cover;
   background-position: center;
   margin-top: 2vh;
@@ -825,7 +847,29 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .text-title-section-4 {
   font-family: "SFProBold";
-  font-size: 40px;
+  font-size: 45px;
+  color: var(--black);
+  font-weight: 900;
+  line-height: 1.2;
+  /* margin-top: 30vh;
+  margin-bottom: 3vh; */
+  /* margin-left: 7vh; */
+}
+
+.text-title-desc-section-4 {
+  font-family: "SFProBold";
+  font-size: 30px;
+  color: var(--black);
+  font-weight: 900;
+  line-height: 1.2;
+  /* margin-top: 30vh;
+  margin-bottom: 3vh; */
+  /* margin-left: 7vh; */
+}
+
+.text-title-desc-exp-section-4 {
+  font-family: "SFProBold";
+  font-size: 12px;
   color: var(--black);
   font-weight: 900;
   line-height: 1.2;
@@ -866,7 +910,7 @@ body, h1, h2, h3, h4, h5, h6 {
   /* font-weight: 900; */
   line-height: 1.2;
   padding: 0.5vh;
-  margin: 1vh 1vh 1vh 0vh;
+  /* margin: 1vh 1vh 1vh 0vh; */
   /* margin-top: 30vh; */
   /* margin-bottom: 3vh; */
   /* margin-left: 7vh; */
@@ -913,7 +957,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .text-title-section-6 {
   font-family: "SFProBold";
   font-size: 65px;
-  color: var(--white);
+  color: var(--darkblue);
   font-weight: 900;
   line-height: 1.2;
   text-shadow: 1px 1px 2px #000;
@@ -962,7 +1006,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .text-date-section-4 {
   font-family: "SFProBold";
-  font-size: 2.6em;
+  font-size: 2.4em;
   color: var(--black);
   /* font-weight: 300; */
   line-height: 1.2;
@@ -1070,8 +1114,8 @@ input:checked+label {
 
 .text-desc-section-4 {
   font-family: "SFProBold";
-  font-size: 64px;
-  color: var(--white);
+  font-size: 44px;
+  color: var(--darkblue);
   font-weight: 800;
   line-height: 0.9;
   margin-bottom: 2vh !important;
@@ -1102,11 +1146,24 @@ input:checked+label {
 .text-early-section-5 {
   font-family: "SFProBold";
   font-size: 60px;
-  color: var(--white);
+  color: var(--darkblue);
+  font-weight: 900;
+  line-height: 1.2;
+  /* margin-bottom: 1vh !important; */
+  margin-top: 40vh;
+  scroll-margin-top: 30vh;
+  text-shadow: 1px 1px 2px #000;
+}
+
+
+.text-early-desc-section-5 {
+  font-family: "SFProBold";
+  font-size: 40px;
+  color: var(--darkblue);
   font-weight: 900;
   line-height: 1.2;
   margin-bottom: 2vh !important;
-  margin-top: 40vh;
+  /* margin-top: 40vh; */
   scroll-margin-top: 30vh;
   text-shadow: 1px 1px 2px #000;
 }
@@ -1755,13 +1812,13 @@ footer {
 }
 
 .bg-stabilo-rev {
-  color: #000;
+  color: var(--darkblue);
   background: transparent;
   animation: stabilo-rev 3s ease 500ms infinite;
 }
 
 .bg-stabilo {
-  color: #fff;
+  color: var(--darkblue);
   background: orange;
   animation: stabilo 3s ease 500ms infinite;
 }
@@ -1773,7 +1830,7 @@ footer {
   }
 
   60% {
-    color: #000;
+    color: var(--darkblue);
     background: transparent;
   }
 
@@ -1785,7 +1842,7 @@ footer {
 
 @keyframes stabilo-rev {
   30% {
-    color: #000;
+    color: var(--darkblue);
     background: transparent;
 
   }
@@ -1796,7 +1853,7 @@ footer {
   }
 
   90% {
-    color: #000;
+    color: var(--darkblue);
     background: transparent;
   }
 }

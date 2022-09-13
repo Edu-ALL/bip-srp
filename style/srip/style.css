@@ -1,12 +1,12 @@
 :root {
   /* add color */
   --white: #FFFFFF;
-  --black: #000000;
+  --black: #313131;
   --orange: #FE7F2E;
   --yellow: #FCCA47;
   --blue: #243871;
   --darkblue: #06205B;
-  --blue-light: #00C6C2;
+  --tosca: #00C6C2;
 }
 
 @font-face {
@@ -41,7 +41,7 @@ body, h1, h2,h3,h4,h5,h6 {
 
 @media only screen and (max-width: 768px) {
   .text-desc-section-4{
-    margin-top: 5vh !important;
+    font-size: 34px !important;
   }
 
   .text-header {
@@ -68,8 +68,13 @@ body, h1, h2,h3,h4,h5,h6 {
   }
 
   .section-4 {
+    background: url('/asset/img/srip/scholarship\ srip_mobile.webp') !important;
+    background-size: 100% 100% !important;
+    /* background-position: center !important; */
+    background-repeat: no-repeat !important;
+    height: 100% !important; 
     /* top: -200px; */
-    height: 130vh !important;
+    width: 100% !important;
   }
 
   .text-section-2{
@@ -149,18 +154,35 @@ body, h1, h2,h3,h4,h5,h6 {
   }
 
   .logo-header{
-    margin-top: 10vh !important;
-    width: 90% !important;
+    margin-top: 3vh !important;
+    width: 55% !important;
   }
 
   .logo-asset{
+    background: url('/asset/img/srip/aset\ srip_mobile.webp') !important;
     margin-top: 1vh !important;
-    width: 90% !important;
+    background-repeat: no-repeat !important;
+    height: 150px !important;
+    width: 100% !important;
+  }
+
+  .logo-asset-2{
+    display: none !important;
+    /* width: 90% !important; */
+  }
+
+  
+  .logo-asset-3{
+    display: none !important;
+    /* width: 90% !important; */
   }
 
   .header-bg {
     /* top: -200px; */
-    height: 45vh !important;
+    background: url('/asset/img/srip/head\ srip_mobile.webp') !important;
+    background-repeat: no-repeat !important;
+    height: 250px !important;
+    margin-top: 0 !important;
   }
 
   .team-aaron-desc{
@@ -259,7 +281,8 @@ body, h1, h2,h3,h4,h5,h6 {
   }
 
   .subtitle-header{
-    font-size: 24px !important;
+    font-size: 14px !important;
+    margin-top: 2vh !important;
   }
 
   .subtitle-header-2{
@@ -297,11 +320,10 @@ body, h1, h2,h3,h4,h5,h6 {
 
 
   .button-booking{
+    font-weight: 400 !important;
+    margin-top: 2vh !important; 
     font-size: 26px !important;
-    background: #5192B7;
-    color: #FFFFFF;
-    font-weight: 700 !important;
-    border-radius: 30px !important;
+    border-radius: 10px !important;
   }
 
   .footer-flashspree{
@@ -341,6 +363,39 @@ body, h1, h2,h3,h4,h5,h6 {
   .portfolio-show{
     padding-top: 0rem !important;
   }
+  
+  .card-text{
+    color: var(--wh);
+    font-size: 17px !important;
+    line-height: 1.2;
+    text-align: start;
+  }
+
+  .card-text-name{
+    font-size: 18px !important;
+  }
+
+  .card-text-program{
+    font-size: 18px !important;
+  }
+}
+
+.card-text-program{
+  font-size: 22px;
+  color: var(--white);
+  font-weight: 400;
+  text-align: end;
+}
+
+.card-text-name{
+  text-align: end;
+  font-size: 22px;
+  color: var(--white);
+  font-weight: 600;
+}
+
+input[type=radio] {
+  display: none;
 }
 
 .navbar-pic{
@@ -356,7 +411,7 @@ body, h1, h2,h3,h4,h5,h6 {
 }
 
 .header-bg {
-  background: url('/asset/img/srip/header\ SRIP.webp');
+  background: url('/asset/img/srip/header\ SRIP_new.webp');
   background-size: cover;
   background-position: center;
   margin-top: 0;
@@ -365,23 +420,33 @@ body, h1, h2,h3,h4,h5,h6 {
 }
 
 .section-4 {
-  background: url('/asset/img/bip/scholarship-bip.webp');
+  background: url('/asset/img/srip/scholarship\ srip_new.webp');
   background-size: cover;
   background-position: center;
   margin-top: 0;
   /* top: -200px; */
-  height: 90vh;
+  /* height: 80vh; */
 }
 
 .logo-header{
   /* margin-top: 15vh; */
-  width: 50%;
+  width: 40%;
   margin-top: 15vh;
 }
 
-.logo-asset{
+.logo-asset-3{
+  background: url('/asset/img/srip/aset\ srip_new.webp');
   width: 80%;
 }
+
+.logo-asset-2{
+  /* background: url('/asset/img/bip/asset\ bip_new.webp'); */
+  width: 80%;
+}
+
+/* .logo-asset{
+  width: 80%;
+} */
 
 .margin-price{
   padding: 10vh;
@@ -428,6 +493,7 @@ body, h1, h2,h3,h4,h5,h6 {
   margin-right: 15vh;
 }
 
+
 .text-section-2{
   margin-left: 1vh;
   /* margin-right: 15vh; */
@@ -465,7 +531,7 @@ body, h1, h2,h3,h4,h5,h6 {
 .text-title-section-2{
   font-family: "SFProBold";
   font-size: 34px;
-  color: var(--blue);
+  color: var(--darkblue);
   font-weight: 800;
   margin-bottom: 2vh !important;
   /* margin-left: 7vh; */
@@ -474,7 +540,7 @@ body, h1, h2,h3,h4,h5,h6 {
 .text-title-section-3{
   font-family: "SFProBold";
   font-size: 40px;
-  color: var(--blue);
+  color: var(--darkblue);
   font-weight: 900;
   margin-bottom: 2vh !important;
   /* margin-left: 7vh; */
@@ -483,7 +549,7 @@ body, h1, h2,h3,h4,h5,h6 {
 .text-title-section-4{
   font-family: "SFProBold";
   font-size: 60px;
-  color: var(--blue);
+  color: var(--darkblue);
   font-weight: 900;
   line-height: 0.9;
   /* margin-bottom: 30vh; */
@@ -493,7 +559,7 @@ body, h1, h2,h3,h4,h5,h6 {
 .text-paragraph-section-4{
   font-family: "SFProMedium";
   font-size: 22px;
-  color: var(--blue);
+  color: var(--darkblue);
   /* font-weight: 300; */
   letter-spacing: 0.01em;
 }
@@ -501,7 +567,7 @@ body, h1, h2,h3,h4,h5,h6 {
 .text-paragraph-section-5{
   font-family: "SFProMedium";
   font-size: 22px;
-  color: var(--blue);
+  color: var(--darkblue);
   /* font-weight: 300; */
   margin-top: 6vh;
   letter-spacing: 0.01em;
@@ -510,7 +576,7 @@ body, h1, h2,h3,h4,h5,h6 {
 .text-date-section-4{
   font-family: "SFProBold";
   font-size: 24px;
-  color: var(--blue);
+  color: var(--darkblue);
   /* font-weight: 300; */
   letter-spacing: 0.01em;
   /* margin-bottom: 20vh; */
@@ -519,7 +585,7 @@ body, h1, h2,h3,h4,h5,h6 {
 .text-desc-section-2{
   font-family: "SFProBold";
   font-size: 30px;
-  color: var(--blue-light);
+  color: var(--darkblue);
   font-weight: 800;
   margin-bottom: 5vh !important;
   /* margin-left: 7vh; */
@@ -529,7 +595,7 @@ body, h1, h2,h3,h4,h5,h6 {
 .text-price-section-3{
   font-family: "SFProBold";
   font-size: 64px;
-  color: var(--blue-light);
+  color: var(--darkblue);
   font-weight: 800;
   margin-bottom: 2vh !important;
   /* margin-left: 7vh; */
@@ -543,16 +609,6 @@ body, h1, h2,h3,h4,h5,h6 {
   margin-bottom: 2vh !important;
   /* margin-left: 7vh; */
 }
-
-.text-price-section-form{
-  font-family: "SFProBold";
-  font-size: 34px;
-  color: var(--black);
-  font-weight: 800;
-  margin-bottom: 2vh !important;
-  /* margin-left: 7vh; */
-}
-
 
 label {
   /* display:block; */
@@ -602,12 +658,12 @@ input:checked + label {
 
 .text-desc-section-4{
   font-family: "SFProBold";
-  font-size: 64px;
-  color: var(--white);
+  font-size: 44px;
+  color: var(--darkblue);
   font-weight: 800;
   line-height: 0.9;
   margin-bottom: 2vh !important;
-  margin-top: 10vh;
+  text-shadow: 1px 1px 2px #000;
 }
 
 .margin-text-desc{
@@ -646,12 +702,18 @@ input:checked + label {
 }
 
 .card-text-2{
-  color: var(--blue);
-  font-size: 19px;
+  color: var(--white);
+  font-size: 20px;
   line-height: 1.2;
   text-align: start;
 }
 
+.card-text-6{
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: start;
+}
 
 hr {
   padding: 1px 0;
@@ -832,7 +894,7 @@ input:checked + label {
   font-family: "SFProBold" !important;
   margin-top: 5vh;
   font-size: 34px;
-  color: var(--blue);
+  color: var(--white);
   font-weight: 800;
 }
 
@@ -1043,6 +1105,7 @@ input:checked + label {
   background: var(--orange);
   color: #FFFFFF;
   font-weight: 700;
+  margin-top: 15vh;
   border-radius: 5px;
 }
 

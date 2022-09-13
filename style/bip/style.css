@@ -1,11 +1,12 @@
 :root {
   /* add color */
   --white: #FFFFFF;
-  --black: #000000;
+  --black: #313131;
   --orange: #FE7F2E;
   --yellow: #FCCA47;
   --blue: #243871;
-  --blue-light: #00C6C2;
+  --darkblue: #06205B;
+  --tosca: #00C6C2;
 }
 
 @font-face {
@@ -63,8 +64,13 @@ body, h1, h2,h3,h4,h5,h6 {
   }
 
   .section-4 {
+    background: url('/asset/img/bip/scholarship\ bip_mobile.webp') !important;
+    background-size: 100% 100% !important;
+    /* background-position: center !important; */
+    background-repeat: no-repeat !important;
+    height: 100% !important; 
     /* top: -200px; */
-    height: 130vh !important;
+    width: 100% !important;
   }
 
   .text-section-2{
@@ -144,18 +150,36 @@ body, h1, h2,h3,h4,h5,h6 {
   }
 
   .logo-header{
-    margin-top: 10vh !important;
-    width: 90% !important;
+    margin-top: 4vh !important;
+    width: 55% !important;
   }
 
   .logo-asset{
+    background: url('/asset/img/bip/aset\ bip_mobile.webp') !important;
     margin-top: 1vh !important;
-    width: 90% !important;
+    background-repeat: no-repeat !important;
+    height: 150px !important;
+    width: 100% !important;
+  }
+
+  .logo-asset-2{
+    display: none !important;
+    /* width: 90% !important; */
+  }
+
+  .logo-asset-3{
+    display: none !important;
+    /* width: 90% !important; */
   }
 
   .header-bg {
-    /* top: -200px; */
-    height: 45vh !important;
+    background: url('/asset/img/bip/head\ bip_mobile.webp') !important;
+    /* background-size: cover !important; */
+    /* background-position: center !important; */
+    background-repeat: no-repeat !important;
+    height: 250px !important;
+    margin-top: 0 !important;
+    /* height: 45vh !important; */
   }
 
   .team-aaron-desc{
@@ -254,7 +278,8 @@ body, h1, h2,h3,h4,h5,h6 {
   }
 
   .subtitle-header{
-    font-size: 24px !important;
+    font-size: 14px !important;
+    margin-top: 2vh !important;
   }
 
   .subtitle-header-2{
@@ -296,7 +321,7 @@ body, h1, h2,h3,h4,h5,h6 {
     background: #5192B7;
     color: #FFFFFF;
     font-weight: 700 !important;
-    border-radius: 30px !important;
+    border-radius: 10px !important;
   }
 
   .footer-flashspree{
@@ -327,15 +352,56 @@ body, h1, h2,h3,h4,h5,h6 {
   }
 
   .button-booking{
-    font-size: 36px;
-    background: #5192B7;
-    color: #FFFFFF;
-    font-weight: 700;
-    border-radius: 30px;
+    font-weight: 400 !important;
+    margin-top: 2vh !important; 
+    border-radius: 10px !important;
   }
+
+  .text-desc-section-4 {
+    font-family: "SFProBold";
+    font-size: 34px !important;
+    color: var(--darkblue);
+    font-weight: 800;
+    line-height: 0.9;
+    margin-bottom: 2vh !important;
+  }
+
   .portfolio-show{
     padding-top: 0rem !important;
   }
+
+  .card-text{
+    color: var(--white) !important;
+    font-size: 17px !important;
+    line-height: 1.2;
+    text-align: start;
+  }
+
+  .card-text-name{
+    font-size: 18px !important;
+  }
+
+  .card-text-program{
+    font-size: 18px !important;
+  }
+}
+
+.card-text-program{
+  font-size: 22px;
+  color: var(--white);
+  font-weight: 400;
+  text-align: end;
+}
+
+.card-text-name{
+  text-align: end;
+  font-size: 22px;
+  color: var(--white);
+  font-weight: 600;
+}
+
+input[type=radio] {
+  display: none;
 }
 
 .navbar-pic{
@@ -351,7 +417,7 @@ body, h1, h2,h3,h4,h5,h6 {
 }
 
 .header-bg {
-  background: url('/asset/img/bip/header-bip.webp');
+  background: url('/asset/img/bip/header\ bip_new.webp');
   background-size: cover;
   background-position: center;
   margin-top: 0;
@@ -360,21 +426,27 @@ body, h1, h2,h3,h4,h5,h6 {
 }
 
 .section-4 {
-  background: url('/asset/img/bip/scholarship-bip.webp');
+  background: url('/asset/img/bip/scholarship\ bip_new.webp');
   background-size: cover;
   background-position: center;
   margin-top: 0;
   /* top: -200px; */
-  height: 90vh;
+  /* height: 80vh; */
 }
 
 .logo-header{
   /* margin-top: 15vh; */
-  width: 70%;
+  width: 40%;
   margin-top: 15vh;
 }
 
-.logo-asset{
+.logo-asset-3{
+  background: url('/asset/img/bip/asset\ bip_new.webp');
+  width: 80%;
+}
+
+.logo-asset-2{
+  /* background: url('/asset/img/bip/asset\ bip_new.webp'); */
   width: 80%;
 }
 
@@ -478,9 +550,10 @@ body, h1, h2,h3,h4,h5,h6 {
 .text-title-section-4{
   font-family: "SFProBold";
   font-size: 60px;
-  color: var(--blue);
+  color: var(--darkblue);
   font-weight: 900;
   line-height: 0.9;
+  text-shadow: 1px 1px 2px #000;
   /* margin-bottom: 30vh; */
   /* margin-left: 7vh; */
 }
@@ -490,6 +563,16 @@ body, h1, h2,h3,h4,h5,h6 {
   font-size: 22px;
   color: var(--blue);
   /* font-weight: 300; */
+  letter-spacing: 0.01em;
+}
+
+
+.text-paragraph-section-5{
+  font-family: "SFProMedium";
+  font-size: 22px;
+  color: var(--blue);
+  /* font-weight: 300; */
+  margin-top: 15vh;
   letter-spacing: 0.01em;
 }
 
@@ -505,7 +588,7 @@ body, h1, h2,h3,h4,h5,h6 {
 .text-desc-section-2{
   font-family: "SFProBold";
   font-size: 30px;
-  color: var(--yellow);
+  color: var(--tosca);
   font-weight: 800;
   margin-bottom: 5vh !important;
   /* margin-left: 7vh; */
@@ -515,7 +598,7 @@ body, h1, h2,h3,h4,h5,h6 {
 .text-price-section-3{
   font-family: "SFProBold";
   font-size: 64px;
-  color: var(--yellow);
+  color: var(--tosca);
   font-weight: 800;
   margin-bottom: 2vh !important;
   /* margin-left: 7vh; */
@@ -586,14 +669,15 @@ input:checked + label {
   /* margin-left: 7vh; */
 }
 
-.text-desc-section-4{
+.text-desc-section-4 {
   font-family: "SFProBold";
-  font-size: 64px;
-  color: var(--white);
+  font-size: 44px;
+  color: var(--darkblue);
   font-weight: 800;
   line-height: 0.9;
   margin-bottom: 2vh !important;
-  /* margin-left: 7vh; */
+  text-shadow: 1px 1px 2px #000;
+  /* margin-top: 30vh; */
 }
 
 .text-early-section-4{
@@ -620,15 +704,13 @@ input:checked + label {
 .card {
   border-radius: 16px;
 }
+
 .card-text{
   color: var(--blue);
   font-size: 24px;
   line-height: 1.2;
   text-align: start;
 }
-
-
-
 
 hr {
   padding: 1px 0;
@@ -1021,6 +1103,7 @@ input:checked + label {
   font-size: 36px;
   background: var(--orange);
   color: #FFFFFF;
+  margin-top: 15vh;
   font-weight: 700;
   border-radius: 5px;
 }

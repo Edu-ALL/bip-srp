@@ -1,11 +1,12 @@
 :root {
   /* add color */
   --white: #FFFFFF;
-  --black: #000000;
+  --black: #313131;
   --orange: #FE7F2E;
   --yellow: #FCCA47;
   --blue: #243871;
-  --blue-light: #00C6C2;
+  --darkblue: #06205B;
+  --tosca: #00C6C2;
 }
 
 @font-face {
@@ -333,7 +334,7 @@ body, h1, h2,h3,h4,h5,h6 {
 }
 
 .header-bg {
-  background: url('/asset/img/scholarship/header\ scholarship.webp');
+  background: url('/asset/img/scholarship/header\ scholarship_new.webp');
   background-size: cover;
   background-position: center;
   margin-top: 0;
