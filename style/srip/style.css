@@ -663,7 +663,7 @@ input:checked + label {
   font-weight: 800;
   line-height: 0.9;
   margin-bottom: 2vh !important;
-  text-shadow: 1px 1px 2px #000;
+  /* text-shadow: 1px 1px 2px #000; */
 }
 
 .margin-text-desc{
