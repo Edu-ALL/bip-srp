@@ -45,7 +45,8 @@ body, h1, h2, h3, h4, h5, h6 {
 
 
   .subtitle-skill-obtain {
-    font-size: 25px !important;
+    font-size: 27px !important;
+    margin-bottom: 4vh !important;
   }
 
   .icon-img {
@@ -88,6 +89,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
   .subtitle-our-team {
     font-size: 30px !important;
+    margin-top: 3vh !important;
   }
 
   .text-early-section-5,
@@ -123,7 +125,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
   .text-paragraph-section-7 {
     font-size: 22px !important;
-    line-height: 1 !important;
+    line-height: 1.2 !important;
   }
 
   .text-title-section-3 {
@@ -239,13 +241,19 @@ body, h1, h2, h3, h4, h5, h6 {
   .what-you-learn-bip {
     margin-left: 0px !important;
     margin-right: 5px !important;
-    padding: 0vh !important;
+    padding: 4vh !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    display: block !important;
   }
 
   .what-you-learn-srip {
     margin-left: 5px !important;
     margin-right: 0px !important;
     padding: 4vh !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    display: block !important;
   }
 
   .text-title-section-5 {
@@ -605,6 +613,11 @@ body, h1, h2, h3, h4, h5, h6 {
   .text-price-section-form {
     font-size: 24px !important;
   }
+
+  .testi-content {
+    height: 100px !important;
+  }
+  
 }
 
 .padding-logo{
@@ -940,6 +953,7 @@ body, h1, h2, h3, h4, h5, h6 {
   color: var(--black);
   font-weight: 900;
   line-height: 1.2;
+  text-shadow: 1px 1px 2px #b0b0b0;
   /* margin-top: 30vh;
   margin-bottom: 3vh; */
   /* margin-left: 7vh; */
@@ -951,6 +965,7 @@ body, h1, h2, h3, h4, h5, h6 {
   color: var(--black);
   font-weight: 900;
   line-height: 1.2;
+  text-shadow: 1px 1px 2px #b0b0b0;
   /* margin-top: 30vh;
   margin-bottom: 3vh; */
   /* margin-left: 7vh; */
@@ -985,6 +1000,7 @@ body, h1, h2, h3, h4, h5, h6 {
   background: #BFF1F0;
   cursor: auto !important;
   /* font-weight: 900; */
+  display: inline;
   line-height: 1.2;
   padding: 4px 4px !important;
   margin: 1vh 1vh 1vh 0vh;
@@ -1029,6 +1045,7 @@ body, h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   background: #C1C7D6;
   /* font-weight: 900; */
+  display: inline;
   line-height: 1.2;
   padding: 4px 4px !important;
   margin: 1vh 0vh 1vh 1vh;
@@ -1043,6 +1060,7 @@ body, h1, h2, h3, h4, h5, h6 {
   color: var(--black);
   font-weight: 900;
   line-height: 1.2;
+  text-shadow: 1px 1px 2px #b0b0b0;
   /* margin-bottom: 2vh !important;
   margin-top: 40vh; */
 }
@@ -1148,19 +1166,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 
 
-label {
-  /* display:block; */
-  border-radius: 5px;
-  border: solid 2px #D9D9D9;
-  width: 120px;
-  height: 40px;
-  background-color: #D9D9D9;
-  margin-top: 10px;
-  color: #B6B6B6;
-  text-align: center;
-  line-height: 40px;
-  cursor: pointer;
-}
+
 
 .intertested-checkbox {
   /* display:block; */
@@ -1203,7 +1209,7 @@ input:checked+label {
   font-size: 44px;
   color: var(--darkblue);
   font-weight: 800;
-  line-height: 0.9;
+  line-height: 1.2;
   margin-bottom: 2vh !important;
   /* text-shadow: 1px 1px 2px #000; */
   /* margin-top: 30vh; */
@@ -1403,9 +1409,21 @@ hr {
   margin-top: 5% !important;
 }
 
-
 label {
   /* display:block; */
+  border-radius: 5px;
+  border: solid 2px #D9D9D9;
+  width: 130px;
+  height: 45x;
+  background-color: #D9D9D9;
+  margin-top: 10px;
+  color: #B6B6B6;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+/* label {
   border: solid 2px #D9D9D9;
   width: 120px;
   height: 40px;
@@ -1414,7 +1432,7 @@ label {
   color: #B6B6B6;
   text-align: center;
   line-height: 40px;
-}
+} */
 
 .intertested-checkbox {
   /* display:block; */
@@ -1568,6 +1586,7 @@ input:checked+label {
 .subtitle-skill-obtain {
   font-family: "SFProBold";
   font-size: 58px;
+  margin-bottom: 7vh;
   color: var(--white);
   font-weight: 800;
 }

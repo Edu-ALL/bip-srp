@@ -67,10 +67,14 @@ body, h1, h2,h3,h4,h5,h6 {
     margin-bottom: 1vh !important;
   }
 
+  .button-take-me{
+    text-align: center !important;
+  }
+
   .section-4 {
     background: url('/asset/img/srip/scholarship\ srip_mobile.webp') !important;
-    background-size: 100% 100% !important;
-    /* background-position: center !important; */
+    background-size: cover !important;
+    background-position: center !important;
     background-repeat: no-repeat !important;
     height: 100% !important; 
     /* top: -200px; */
@@ -554,6 +558,10 @@ input[type=radio] {
   line-height: 0.9;
   /* margin-bottom: 30vh; */
   /* margin-left: 7vh; */
+}
+
+.button-take-me{
+  text-align: right;
 }
 
 .text-paragraph-section-4{
@@ -1105,7 +1113,7 @@ input:checked + label {
   background: var(--orange);
   color: #FFFFFF;
   font-weight: 700;
-  margin-top: 15vh;
+  margin-top: 10vh;
   border-radius: 5px;
 }
 

@@ -65,8 +65,8 @@ body, h1, h2,h3,h4,h5,h6 {
 
   .section-4 {
     background: url('/asset/img/bip/scholarship\ bip_mobile.webp') !important;
-    background-size: 100% 100% !important;
-    /* background-position: center !important; */
+    background-size: cover !important;
+    background-position: center !important;
     background-repeat: no-repeat !important;
     height: 100% !important; 
     /* top: -200px; */
@@ -296,6 +296,10 @@ body, h1, h2,h3,h4,h5,h6 {
     font-size: 32px !important;
   }
 
+  .button-take-me{
+    text-align: center !important;
+  }
+
   .subtitle-about-us-2{
     text-align: center;
     font-size: 18px !important;
@@ -362,7 +366,7 @@ body, h1, h2,h3,h4,h5,h6 {
     font-size: 34px !important;
     color: var(--darkblue);
     font-weight: 800;
-    line-height: 0.9;
+    line-height: 1.2 !important;
     margin-bottom: 2vh !important;
   }
 
@@ -674,7 +678,7 @@ input:checked + label {
   font-size: 44px;
   color: var(--darkblue);
   font-weight: 800;
-  line-height: 0.9;
+  line-height: 1.2;
   margin-bottom: 2vh !important;
   /* text-shadow: 1px 1px 2px #000; */
   /* margin-top: 30vh; */
@@ -703,6 +707,19 @@ input:checked + label {
 
 .card {
   border-radius: 16px;
+}
+
+.farrel-pict{
+  /* width: 70%; */
+  align-items: center;
+  text-align: center;
+}
+
+.farrel-img{
+  width: 100%;
+  margin-top: 5%;
+  align-items: center;
+  text-align: center;
 }
 
 .card-text{
@@ -1009,6 +1026,10 @@ input:checked + label {
   color: #5192B7;
 }
 
+.button-take-me{
+  text-align: right;
+}
+
 .team-farrel-position{
   font-family: 'SFProRegular';
   font-style: normal;
@@ -1103,7 +1124,7 @@ input:checked + label {
   font-size: 36px;
   background: var(--orange);
   color: #FFFFFF;
-  margin-top: 15vh;
+  margin-top: 10vh;
   font-weight: 700;
   border-radius: 5px;
 }
