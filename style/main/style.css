@@ -400,6 +400,8 @@ body, h1, h2, h3, h4, h5, h6 {
 
   .farrel-img {
     margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    width: 70% !important;
   }
 
   .photo-img-3 {
@@ -617,6 +619,10 @@ body, h1, h2, h3, h4, h5, h6 {
   .testi-content {
     height: 100px !important;
   }
+
+  .collaborate{
+    font-size: 28px !important;
+  }
   
 }
 
@@ -661,6 +667,13 @@ body, h1, h2, h3, h4, h5, h6 {
 .text-activity-2 {
   font-size: 24px;
   margin-bottom: 10vh;
+}
+
+.farrel-img{
+  width: 100%;
+  margin-top: 5%;
+  align-items: center;
+  text-align: center;
 }
 
 .btn-bip {
@@ -1581,6 +1594,13 @@ input:checked+label {
   font-size: 78px;
   color: var(--black);
   font-weight: 800;
+}
+
+.collaborate{
+  font-family: "SFProBold";
+  font-size: 40px;
+  color: var(--blue);
+  font-weight: 700;
 }
 
 .subtitle-skill-obtain {

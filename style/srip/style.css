@@ -203,6 +203,8 @@ body, h1, h2,h3,h4,h5,h6 {
 
   .farrel-img{
     margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    width: 70% !important;
   }
 
   .photo-img-3{
@@ -381,6 +383,10 @@ body, h1, h2,h3,h4,h5,h6 {
 
   .card-text-program{
     font-size: 18px !important;
+  }
+
+  .subtitle-our-team{
+    font-size: 28px !important;
   }
 }
 
@@ -588,6 +594,13 @@ input[type=radio] {
   /* font-weight: 300; */
   letter-spacing: 0.01em;
   /* margin-bottom: 20vh; */
+}
+
+.farrel-img{
+  width: 100%;
+  margin-top: 5%;
+  align-items: center;
+  text-align: center;
 }
 
 .text-desc-section-2{
