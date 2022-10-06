@@ -1277,3 +1277,53 @@ footer {
   color: #ffffff;
   text-decoration: none;
 }
+
+
+
+
+.vertical-line {
+  width: 5px;
+  height: 100%;
+  background: var(--orange);
+}
+
+.about-us-icon-desc{
+  font-weight: 600;
+}
+
+
+.about-us-desc{
+  font-weight: 800;
+  font-family: "SFProMedium";
+  font-size: 22px;
+  letter-spacing: 0.01em;
+}
+
+.about-us-footer{
+  font-weight: 700;
+  font-family: "SFProMedium";
+  font-size: 40px;
+}
+
+.footer {
+  background: #16489F;
+  color: #fff;
+  font-size: 18px;
+  padding: 70px 0;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.about {
+  position: relative;
+  z-index: 3;
+}
+
+.about-ico {
+  width: 20%;
+  height: auto;
+}
