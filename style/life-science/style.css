@@ -195,7 +195,7 @@ body, h1, h2,h3,h4,h5,h6 {
 
   .jumbotron {
     min-height: 200px !important;
-    background-position: 50% 0;
+    background-position: center !important;
   }
 
   .content h4 {
@@ -471,6 +471,7 @@ input[type=radio] {
 .jumbotron {
   background-image: url('/asset/img/life-science/life science banner.webp');
   background-size: cover;
+  background-position: 0% 60%;
   min-height: 520px;
   border-radius: 0;
 }
