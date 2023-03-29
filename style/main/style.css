@@ -55,7 +55,7 @@ body, h1, h2, h3, h4, h5, h6 {
   }
 
   .icon-desc {
-    font-size: 15px !important;
+    font-size: 12px !important;
   }
 
   .btn-bip, .btn-srip {
@@ -101,8 +101,34 @@ body, h1, h2, h3, h4, h5, h6 {
     scroll-margin-top: 10vh !important;
   }
 
+  .text-early-desc-section-5 {
+    font-size: 32px !important;
+  }
+
   .text-early-section-6 {
     font-size: 30px !important;
+  }
+
+  .t-box1 {
+    font-size: 20px !important;
+    font-weight: 800;
+    color: var(--black);
+  }
+
+  .header-section-stream {
+    font-size: 16px !important;
+  }
+  
+  .content-stream {
+    font-size: 12px !important;
+    display: inline;
+    line-height: 1.2;
+    border-radius: 6px !important;
+    padding: 2px 6px !important;
+  }
+
+  .date-apply {
+    font-size: 16px !important;
   }
 
   .passion {
@@ -179,6 +205,12 @@ body, h1, h2, h3, h4, h5, h6 {
     background-attachment: fixed !important;
     /* top: -200px; */
     /* height: 130vh !important; */
+  }
+  .section-4-header {
+    scroll-margin-top: 55vh !important;
+    margin-top: 0vh !important;
+    background: url('/asset/img/main/introducing_mobile.webp') !important;
+    background-attachment: fixed !important;
   }
 
 
@@ -617,7 +649,12 @@ body, h1, h2, h3, h4, h5, h6 {
   }
 
   .text-price-section-form {
-    font-size: 24px !important;
+    font-size: 20px !important;
+  }
+
+  .section-3 h3 label {
+    font-size: 20px !important;
+    /* font-weight: 600 !important; */
   }
 
   .testi-content {
@@ -629,6 +666,37 @@ body, h1, h2, h3, h4, h5, h6 {
     margin-top: 10% !important;
   }
   
+}
+
+.header-section-stream {
+  font-family: "SFProBold" !important;
+  color: var(--orange);
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.content-stream {
+  font-family: "SFProMedium";
+  font-size: 24px;
+  color: var(--white);
+  background: var(--blue);
+  display: inline;
+  line-height: 1.2;
+  border-radius: 6px !important;
+  padding: 6px 10px !important;
+}
+
+.section-3 h3 label {
+  font-weight: 600 !important;
+}
+
+.date-apply {
+  color: var(--white);
+  font-family: "SFProBold" !important;
+  font-size: 26px;
+  font-weight: 800;
+  background-color: var(--blue);
+  border-radius: 0 !important;
 }
 
 .padding-logo{
@@ -666,12 +734,16 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .text-activity {
-  font-size: 24px;
+  font-size: 22px;
+}
+
+.text-activity ol li {
+  line-height: 1.5;
 }
 
 .text-activity-2 {
   font-size: 24px;
-  margin-bottom: 10vh;
+  margin-bottom: 2vh;
 }
 
 .farrel-img{
@@ -719,7 +791,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .header-bg {
   transition: all 0.31s;
-  background: url('/asset/img/main/Headline\ 1.webp');
+  background: url('/asset/img/main/Home banner 1.webp');
   background-size: cover !important;
   background-position: left;
   background-attachment: fixed;
@@ -729,7 +801,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .header-bg-2 {
   transition: all 0.3s;
-  background: url('/asset/img/main/Headline\ 2.webp');
+  background: url('/asset/img/main/Home banner 2.webp');
   background-size: cover !important;
   background-position: right;
   background-attachment: fixed;
@@ -738,7 +810,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .section-4 {
-  background: url('/asset/img/main/career_new_bgt.webp');
+  background: url('/asset/img/main/Home banner 4.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom right;
@@ -746,6 +818,14 @@ body, h1, h2, h3, h4, h5, h6 {
   scroll-margin-top: 40vh;
   /* top: -200px; */
   /* height: 110vh; */
+}
+.section-4-header {
+  background: url('/asset/img/main/Home banner 3.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom right;
+  margin-top: 20vh;
+  scroll-margin-top: 40vh;
 }
 
 .section-5 {
@@ -761,8 +841,8 @@ body, h1, h2, h3, h4, h5, h6 {
   /* background: url('/asset/img/main/career_new.webp'); */
   background-size: cover;
   background-position: center;
-  margin-top: 2vh;
-  margin-bottom: 10vh;
+  margin-top: 4vh;
+  margin-bottom: 5vh;
   /* top: -200px; */
   /* height: 110vh; */
 }
@@ -958,46 +1038,37 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .text-title-section-3 {
   font-family: "SFProBold";
-  font-size: 40px;
+  font-size: 42px;
   color: var(--blue);
   font-weight: 900;
   margin-bottom: 2vh !important;
-  /* margin-left: 7vh; */
 }
 
 .text-title-section-4 {
   font-family: "SFProBold";
-  font-size: 45px;
+  font-size: 42px;
   color: var(--black);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.2;
-  text-shadow: 1px 1px 2px #b0b0b0;
-  /* margin-top: 30vh;
-  margin-bottom: 3vh; */
-  /* margin-left: 7vh; */
+  /* text-shadow: 1px 1px 2px #b0b0b0; */
 }
 
 .text-title-desc-section-4 {
-  font-family: "SFProBold";
-  font-size: 30px;
+  font-family: "SFProRegular";
+  font-size: 28px;
   color: var(--black);
-  font-weight: 900;
-  line-height: 1.2;
-  text-shadow: 1px 1px 2px #b0b0b0;
-  /* margin-top: 30vh;
-  margin-bottom: 3vh; */
-  /* margin-left: 7vh; */
+  font-weight: 600;
+  line-height: 1.3;
+  /* text-shadow: 1px 1px 2px #b0b0b0; */
 }
 
 .text-title-desc-exp-section-4 {
-  font-family: "SFProBold";
-  font-size: 18px;
+  font-family: "SFProRegular";
+  font-size: 16px;
   color: var(--black);
-  font-weight: 900;
+  font-weight: 300;
+  /* font-style: italic; */
   line-height: 1.2;
-  /* margin-top: 30vh;
-  margin-bottom: 3vh; */
-  /* margin-left: 7vh; */
 }
 
 .text-title-section-7 {
@@ -1076,18 +1147,16 @@ body, h1, h2, h3, h4, h5, h6 {
   font-family: "SFProBold";
   font-size: 40px;
   color: var(--black);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.2;
-  text-shadow: 1px 1px 2px #b0b0b0;
-  /* margin-bottom: 2vh !important;
-  margin-top: 40vh; */
+  /* text-shadow: 1px 1px 2px #b0b0b0; */
 }
 
 .text-title-section-6 {
   font-family: "SFProBold";
-  font-size: 65px;
+  font-size: 62px;
   color: var(--darkblue);
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.2;
   text-shadow: 1px 1px 2px #000;
   margin-bottom: 2vh !important;
@@ -1100,7 +1169,7 @@ body, h1, h2, h3, h4, h5, h6 {
   font-size: 22px;
   color: var(--black);
   /* margin-top: 3vh; */
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.01em;
 }
 
@@ -1108,8 +1177,8 @@ body, h1, h2, h3, h4, h5, h6 {
   font-family: "SFProMedium";
   font-size: 22px;
   color: var(--black);
-  font-weight: bold;
-  letter-spacing: 0.01em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .text-paragraph-section-6 {
@@ -1135,10 +1204,10 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .text-date-section-4 {
   font-family: "SFProBold";
-  font-size: 2.4em;
+  font-size: 36px;
   color: var(--black);
   /* font-weight: 300; */
-  line-height: 1.2;
+  line-height: 1.3;
   letter-spacing: 0.01em;
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -1258,9 +1327,9 @@ input:checked+label {
   font-size: 60px;
   color: var(--darkblue);
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1.1;
   /* margin-bottom: 1vh !important; */
-  margin-top: 40vh;
+  margin-top: 30vh;
   scroll-margin-top: 38vh;
   text-shadow: 1px 1px 2px #000;
 }
@@ -1271,7 +1340,7 @@ input:checked+label {
   font-size: 40px;
   color: var(--darkblue);
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: 2vh !important;
   /* margin-top: 40vh; */
   scroll-margin-top: 30vh;
@@ -1431,13 +1500,13 @@ label {
   /* display:block; */
   border-radius: 5px;
   border: solid 2px #D9D9D9;
-  width: 130px;
+  /* width: 130px; */
   height: 45x;
   background-color: #D9D9D9;
   margin-top: 10px;
   color: #B6B6B6;
   text-align: center;
-  line-height: 40px;
+  /* line-height: 40px; */
   cursor: pointer;
 }
 
@@ -1626,6 +1695,7 @@ input:checked+label {
   font-family: "SFProMedium";
   font-size: 24px;
   color: var(--white);
+  line-height: 1.2;
 }
 
 .subtitle-what-learn {
@@ -1820,7 +1890,7 @@ input:checked+label {
 }
 
 .nav-item {
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 
 .nav-item .nav-link {
