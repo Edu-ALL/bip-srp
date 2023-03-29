@@ -201,7 +201,9 @@ body, h1, h2, h3, h4, h5, h6 {
   .section-4 {
     scroll-margin-top: 55vh !important;
     margin-top: 0vh !important;
-    background: url('/asset/img/main/introducing_mobile.webp') !important;
+    background: url('/asset/img/main/Home banner mobile 4.webp') !important;
+    background-size: cover !important;
+    background-position: bottom !important;
     background-attachment: fixed !important;
     /* top: -200px; */
     /* height: 130vh !important; */
@@ -209,7 +211,9 @@ body, h1, h2, h3, h4, h5, h6 {
   .section-4-header {
     scroll-margin-top: 55vh !important;
     margin-top: 0vh !important;
-    background: url('/asset/img/main/introducing_mobile.webp') !important;
+    background: url('/asset/img/main/Home banner mobile 3.webp') !important;
+    background-size: cover !important;
+    background-position: bottom !important;
     background-attachment: fixed !important;
   }
 
@@ -254,12 +258,18 @@ body, h1, h2, h3, h4, h5, h6 {
 
   .text-title-section-4 {
     font-size: 35px !important;
-    color: var(--black) !important;
+    /* color: var(--black) !important; */
     text-align: left;
-    text-shadow: 1px 1px 2px #000;
+    /* text-shadow: 1px 1px 2px #000; */
     margin-top: 4em !important;
     /* margin-bottom: 1vh !important;  */
     /* margin-left: 7vh; */
+  }
+
+  .text-title-desc-section-4 {
+    font-size: 24px !important;
+    line-height: 1.3;
+    /* text-shadow: 1px 1px 2px #b0b0b0; */
   }
 
   .what-you-learn-bip,
@@ -293,12 +303,10 @@ body, h1, h2, h3, h4, h5, h6 {
   }
 
   .text-title-section-5 {
-    color: var(--black) !important;
+    font-size: 30px !important;
+    /* color: var(--black) !important; */
     text-align: left;
     /* text-shadow: 1px 1px 2px #000 !important; */
-    /* margin-top: 3vh !important;
-    margin-bottom: 1vh !important; */
-    /* margin-left: 7vh; */
   }
 
   .text-date-section-4 {
@@ -404,9 +412,9 @@ body, h1, h2, h3, h4, h5, h6 {
 
   .header-bg {
     transition: all 0.31s;
-    background: url('/asset/img/main/Headline\ 1_mobile.webp') !important;
+    background: url('/asset/img/main/Home banner mobile 1.webp') !important;
     background-size: cover !important;
-    background-position: right !important;
+    background-position: center !important;
     background-attachment: fixed !important;
     margin-top: 0;
     height: 200vh !important;
@@ -414,10 +422,10 @@ body, h1, h2, h3, h4, h5, h6 {
   
   .header-bg-2 {
     transition: all 0.3s;
-    background: url('/asset/img/main/Headline\ 2_mobile.webp') !important;
+    background: url('/asset/img/main/Home banner mobile 2.webp') !important;
     background-size: cover !important;
-    background-position: right !important;
-    background-attachment: fixed;
+    background-position: top !important;
+    background-attachment: fixed !important;
     margin-top: 0;
     height: 200vh !important;
   }
@@ -572,6 +580,10 @@ body, h1, h2, h3, h4, h5, h6 {
 
   .footer-flashspree {
     font-size: 24px !important;
+  }
+
+  .footer-logo {
+    width: 200px !important;
   }
 
   .follow {
@@ -1996,6 +2008,10 @@ footer {
   text-decoration: none;
 }
 
+.footer-logo {
+  width: 250px;
+}
+
 .follow {
   font-family: 'Ivy Mode';
   font-style: normal;
@@ -2104,7 +2120,7 @@ footer {
   background: #16489F;
   color: #fff;
   font-size: 18px;
-  padding: 70px 0;
+  padding: 40px 0;
 }
 
 .footer a {
@@ -2119,6 +2135,6 @@ footer {
 }
 
 .about-ico {
-  width: 20%;
+  width: 42%;
   height: auto;
 }
