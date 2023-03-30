@@ -366,6 +366,15 @@ body, h1, h2,h3,h4,h5,h6 {
     font-size: 18px !important;
   }
 
+  .footer {
+    font-size: 14px !important;
+    padding: 40px 0;
+  }
+
+  .footer a {
+    font-size: 14px !important;
+  }
+
   .footer-flashspree{
     font-size: 24px !important;
   }
@@ -429,12 +438,21 @@ body, h1, h2,h3,h4,h5,h6 {
     font-size: 17px !important;
   }
 
-  .subtitle-our-team{
+  .subtitle-our-team, 
+  .about-us-footer {
     font-size: 28px !important;
   }
 
   .text-price-section-form {
     font-size: 20px !important;
+  }
+
+  .about-us-desc{
+    font-size: 16px !important;
+  }
+
+  .about-us-icon-desc {
+    font-size: 14px !important;
   }
 }
 
@@ -506,6 +524,7 @@ input[type=radio] {
 .content .note {
   font-size: 18px;
   font-style: italic;
+  font-weight: bold;
 }
 
 .content h2 {
@@ -1413,9 +1432,10 @@ footer {
 }
 
 .about-us-footer{
+  font-family: "SFProBold";
+  font-size: 48px;
+  color: var(--blue);
   font-weight: 700;
-  font-family: "SFProMedium";
-  font-size: 40px;
 }
 
 .footer {
@@ -1439,4 +1459,17 @@ footer {
 .about-ico {
   width: 42%;
   height: auto;
+}
+
+.fw-bold {
+  font-family: "SFProBold" !important;
+  font-weight: 800 !important;
+}
+.nav-link.fw-bold {
+  color: var(--orange) !important;
+}
+.nav-link.fw-bold.join-now {
+  font-size: 16px !important;
+  background: var(--orange) !important;
+  color: var(--white) !important;
 }
