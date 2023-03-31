@@ -96,9 +96,17 @@ body, h1, h2, h3, h4, h5, h6 {
   .text-title-section-6,
   .text-desc-section-4 {
     margin-top: 10vh !important;
-    color: var(--orange) !important;
     font-size: 34px !important;
     scroll-margin-top: 10vh !important;
+  }
+
+  .text-early-section-5 {
+    color: var(--orange) !important;
+  }
+
+  .text-title-section-6,
+  .text-desc-section-4 {
+    color: var(--blue) !important;
   }
 
   .text-early-desc-section-5 {
@@ -107,6 +115,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
   .text-early-section-6 {
     font-size: 30px !important;
+    color: var(--blue) !important;
   }
 
   .t-box1 {
@@ -418,6 +427,7 @@ body, h1, h2, h3, h4, h5, h6 {
     /* background-attachment: fixed !important; */
     margin-top: 0;
     height: 200vh !important;
+    position: relative !important;
   }
   
   .header-bg-2 {
@@ -429,6 +439,7 @@ body, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     width: 100% !important;
     height: 200vh !important;
+    position: relative !important;
   }
 
   .team-aaron-desc {
