@@ -61,7 +61,7 @@ h3 {
     color: var(--orange);
 }
 .jumbotron {
-    background: url('/2023/asset/img/about/header about us.webp');
+    background: url('/asset/img/about/header about us.webp');
     background-size: cover;
     /* background-position: 0% 60%; */
     background-position: center;
@@ -112,6 +112,10 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
+    .navbar .navbar-collapse {
+        height: 100vh;
+        align-items: start;
+    }
     .navbar-toggler {
         background: var(--white);
     }
