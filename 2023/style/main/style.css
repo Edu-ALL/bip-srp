@@ -73,7 +73,7 @@ h3 {
     color: var(--orange);
 }
 .header {
-    /* background: url('/2023/asset/img/main/header.png'); */
+    /* background: url('/asset/img/main/header.png'); */
     /* background-size: cover;
     background-attachment: fixed; */
     /* min-height: 90vh; */
@@ -85,7 +85,7 @@ h3 {
     background: 
 }
 .header .header-section-img {
-    background: url('/2023/asset/img/main/research.webp');
+    background: url('/asset/img/main/research.webp');
     background-size: 500px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -122,7 +122,7 @@ h3 {
     font-weight: 300;
 }
 .section-1 {
-    background: url('/2023/asset/img/main/header.png');
+    background: url('/asset/img/main/header.png');
     /* background: var(--blue); */
     background-size: cover;
     background-attachment: fixed;
@@ -219,7 +219,7 @@ h3 {
     font-weight: 700;
 }
 .section-8-img {
-    background: url('/2023/asset/img/main/Apply before June Home.webp');
+    background: url('/asset/img/main/Apply before June Home.webp');
     background-size: cover;
 }
 .section-9 ul {
@@ -314,6 +314,10 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
+    .navbar .navbar-collapse {
+        height: 100vh;
+        align-items: start;
+    }
     .navbar-toggler {
         background: var(--white);
     }
@@ -336,7 +340,7 @@ h3 {
         padding: 0px 24px;
     }
     .header .header-section {
-        background: url('/2023/asset/img/main/research.webp');
+        background: url('/asset/img/main/research.webp');
         background-size: 240px;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -439,21 +443,21 @@ h3 {
         font-size: 16px;
     }
     .section-8 h4 {
-        font-size: 24px;
+        font-size: 20px;
     }
     .section-8-img {
         background-position: 40% 50%;
     }
     .section-9 h2 {
-        font-size: 28px;
+        font-size: 26px;
         font-weight: 700;
         line-height: 1.2;
     }
     .section-9 h4 {
-        font-size: 22px;
+        font-size: 18px;
     }
     .section-9 label {
-        font-size: 18px;
+        font-size: 16px;
         padding: 4px 6px;
         line-height: 1.2;
     }
@@ -485,8 +489,10 @@ h3 {
     }
     .splide__arrow.splide__arrow--prev {
         left: -0.2em !important;
+        display: none;
     }
     .splide__arrow.splide__arrow--next {
         right: -0.2em !important;
+        display: none;
     }
 }
