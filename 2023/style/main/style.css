@@ -122,12 +122,7 @@ h3 {
     font-weight: 300;
 }
 .section-1 {
-    background: url('/asset/img/main/header.png');
-    /* background: var(--blue); */
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom;
-    /* min-height: 90vh; */
+    background: var(--darkblue);
     color: var(--white);
     margin-top: -2px;
 }
