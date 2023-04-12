@@ -313,6 +313,10 @@ h3 {
     .section-6 h3 {
         font-size: 28px;
     }
+    .section-6 .card {
+        min-height: 150px !important;
+        border: none;
+    }
     .section-7 h3 {
         font-size: 28px;
     }
