@@ -1,0 +1,355 @@
+:root {
+    /* add color */
+    --white: #FFFFFF;
+    --black: #313131;
+    --orange: #FE7F2E;
+    --yellow: #FCCA47;
+    --yellow-orange: #FAAF40;
+    --blue: #06205B;
+    /* --blue: #243871; */
+    --darkblue: #050E37;
+    /* --darkblue: #06205B; */
+    --tosca: #65FFFC;
+    --grey: #B6B6B6;
+    --grey-light: #D9D9D9;
+}
+
+* {
+    font-family: 'Asap', sans-serif;
+}
+
+[data-aos] {
+    transition-duration: 1s !important;
+}
+
+h3 {
+    font-size: 42px;
+    font-weight: 700;
+}
+.navbar {
+    transition: 0.5s;
+}
+.navbar-primary {
+    color: var(--black);
+    background: var(--white);
+}
+#navImg1 {
+    width: 124px;
+}
+.navbar .nav-link {
+    font-size: 17px;
+    font-weight: 500;
+}
+.navbar .nav-link.join-now {
+    font-weight: 700;
+    background: var(--orange);
+    color: var(--white);
+    border-radius: 10px;
+}
+.navbar-primary .nav-link {
+    color: var(--black);
+}
+.navbar-primary .nav-link:hover {
+    color: var(--orange);
+    font-weight: 600;
+}
+.navbar-primary .nav-link.join-now:hover {
+    color: var(--white);
+}
+.navbar-nav .active a {
+    font-weight: 600;
+    color: var(--orange);
+}
+.jumbotron {
+    background: url('/2023/asset/img/business/Business banner.webp');
+    background-size: cover;
+    background-position: 0% 60%;
+    min-height: 520px;
+}
+
+.section-1 p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.section-1 .yt-video {
+    max-width: 600px;
+}
+.section-1 .wrapper {
+    position: relative;
+    padding-top: 56.25%;
+}
+.section-1 .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.section-2-list {
+    font-size: 20px;
+    font-weight: 600;
+    background: #00C6C2;
+    color: var(--white);
+    border-radius: 10px;
+}
+.section-2 h4 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.section-2 .note {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+}
+.section-3 .card-price {
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 18px;
+}
+.section-3 h4 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--yellow-orange);
+}
+.section-3 h3 {
+    font-size: 68px;
+    font-weight: 700;
+    color: #00C6C2;
+}
+.section-3 h6 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.section-3 .note {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+}
+.section-4-list {
+    font-size: 20px;
+    font-weight: 600;
+    background: var(--orange);
+    color: var(--white);
+    border-radius: 10px;
+}
+.section-5 h3 {
+    color: var(--blue);
+    font-size: 48px;
+}
+.section-5 p {
+    font-size: 20px;
+}
+.section-5 h4 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.section-5 h4.date-apply {
+    color: var(--white);
+    background: var(--blue);
+    max-width: fit-content;
+}
+.section-5-img {
+    background: url('/2023/asset/img/main/Apply before June Home.webp');
+    background-size: cover;
+}
+.section-6 h3 {
+    color: var(--blue);
+}
+.section-7 h3 {
+    color: var(--blue);
+}
+.section-7 .card {
+    min-height: 270px !important;
+    border-radius: 18px;
+    border: none;
+}
+.section-7 .card .testi-content p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.section-7 .card .testi-author p {
+    font-size: 18px;
+    line-height: 1.3;
+}
+.section-8 ul {
+    list-style: none;
+}
+.section-8 input {
+    display: none;
+}
+.section-8 h2 {
+    color: var(--blue);
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.section-8 h4 {
+    font-size: 28px;
+    font-weight: 600;
+}
+.section-8 label {
+    color: var(--grey);
+    font-size: 26px;
+    font-weight: 600;
+    background-color: var(--grey-light);
+    padding: 0 6px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.section-8 input:checked + label {
+    color: var(--white);
+    background-color: var(--blue);
+}
+.section-8 .btn {
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 600;
+}
+.footer {
+    background: var(--blue);
+    color: var(--white);
+}
+.footer img {
+    height: 50px;
+}
+.footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+.footer hr {
+    border-top: 4px solid;
+}
+
+/* Splide */
+.splide__pagination__page.is-active {
+    background: var(--darkblue) !important;
+    transform: scale(1.6) !important;
+}
+.splide__pagination {
+    bottom: -2em !important;
+}
+.splide__arrow.splide__arrow--prev {
+    left: -2em !important;
+}
+.splide__arrow.splide__arrow--next {
+    right: -2em !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-toggler {
+        background: var(--white);
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    #navImg1 {
+        width: 104px;
+    }
+    .navbar .nav-link {
+        font-size: 12px;
+    }
+    .navbar .nav-link.join-now {
+        font-size: 12px;
+    }
+    .jumbotron {
+        min-height: 200px;
+        background-position: center;
+    }
+    .section-1 p {
+        font-size: 14px;
+    }
+    .section-2 h3 {
+        font-size: 24px;
+    }
+    .section-2 h4 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .section-2 .note {
+        font-size: 12px;
+    }
+    .section-2-list {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    .section-3 h4 {
+        font-size: 24px;
+    }
+    .section-3 h3 {
+        font-size: 48px;
+    }
+    .section-3 h6 {
+        font-size: 14px;
+    }
+    .section-3 .note {
+        font-size: 12px;
+    }
+    .section-4 h3 {
+        font-size: 24px;
+    }
+    .section-4-list {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    .section-5 h3 {
+        font-size: 32px;
+    }
+    .section-5 p {
+        font-size: 16px;
+    }
+    .section-5 h4 {
+        font-size: 24px;
+    }
+    .section-5-img {
+        background-position: 40% 50%;
+    }
+    .section-7 h3 {
+        font-size: 28px;
+    }
+    .section-7 .card {
+        min-height: 250px !important;
+        border-radius: 18px;
+    }
+    .section-7 .card .testi-content p {
+        font-size: 14px;
+    }
+    .section-7 .card .testi-author p {
+        font-size: 14px;
+    }
+    .section-8 h2 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    .section-8 h4 {
+        font-size: 22px;
+    }
+    .section-8 label {
+        font-size: 18px;
+        padding: 4px 6px;
+        line-height: 1.2;
+    }
+    .section-8 .btn {
+        font-size: 18px;
+    }
+    .footer img {
+        height: 40px;
+    }
+    .footer a {
+        font-size: 14px;
+    }
+    
+    /* Splide */
+    .splide__pagination {
+        bottom: -1.5em !important;
+    }
+    .splide__arrow.splide__arrow--prev {
+        left: -0.2em !important;
+    }
+    .splide__arrow.splide__arrow--next {
+        right: -0.2em !important;
+    }
+}
