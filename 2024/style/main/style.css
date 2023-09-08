@@ -265,6 +265,7 @@ h3 {
     left: -50px;
     rotate: -2deg;
 }
+
 .section-1 .img-arrow {
     position: absolute;
     width: 75%;
@@ -317,6 +318,9 @@ h3 {
 .section-4 h3 {
     font-family: var(--font-primary);
     font-size: 32px;
+}
+.section-4 {
+    margin-top: 120px;
 }
 .section-5 h4 {
     font-size: 22px;
@@ -571,13 +575,13 @@ h3 {
     .navbar-toggler:focus {
         box-shadow: none;
     } 
-    .navbar-toggler {
+    /* .navbar-toggler {
         color: var(--white);
         border-color: var(--white);
     }
     .navbar {
         background: var(--darkblue);
-    }
+    } */
     .navImg1 {
         height: 35px;
         display: none;
@@ -590,6 +594,12 @@ h3 {
     }
     .navbar .nav-link.join-now {
         font-size: 12px;
+    }
+    .navbar .navbar-secondary .join-now a{
+        color: var(--darkblue);
+    }
+    .header {
+        /* padding-top: 100px; */
     }
     .header .header-section {
         padding: 0px 0px;
@@ -606,6 +616,7 @@ h3 {
         background-position: 50% 20%;
     }
     .header .header-field {
+        margin-top: 180px;
         height: 80vh;
     }
     .header .header-field-2 {
@@ -660,6 +671,13 @@ h3 {
         width: 100%;
         /* top: 0px;
         left: -50px; */
+        rotate: -2deg;
+    }
+    .section-1 .img-singapore-sticker-mobile {
+        position: absolute;
+        width: 90%;
+        top: 50%;
+        left: 0%;
         rotate: -2deg;
     }
     .section-2 .container {
