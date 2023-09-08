@@ -255,6 +255,10 @@ h3 {
 .section-6 .apply {
     margin-top: 120px;
 }
+.section-7 h4 {
+    font-size: 28px;
+    font-weight: 600;
+}
 .section-8 h3 {
     color: var(--darkblue);
 }
@@ -314,7 +318,10 @@ h3 {
         box-shadow: none;
     }
     .navImg1 {
-        display: none;
+        height: 25px;
+    }
+    .navImg2 {
+        height: 25px;
     }
     .navbar .nav-link {
         font-size: 12px;
@@ -329,6 +336,7 @@ h3 {
     }
     .section-1 p {
         font-size: 14px;
+        line-height: 1.5rem;
     }
     .section-2 h3 {
         font-size: 24px;
@@ -386,6 +394,7 @@ h3 {
         min-height: 150px !important;
         border: none;
     }
+   
     .section-8 h3 {
         font-size: 28px;
     }

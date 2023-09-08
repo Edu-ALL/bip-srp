@@ -583,11 +583,10 @@ h3 {
         background: var(--darkblue);
     } */
     .navImg1 {
-        height: 35px;
-        display: none;
+        height: 25px;
     }
     .navImg2 {
-        height: 35px;
+        height: 25px;
     }
     .navbar .nav-link {
         font-size: 12px;
