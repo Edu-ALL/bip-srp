@@ -2,85 +2,97 @@
     /* add color */
     --white: #FFFFFF;
     --black: #313131;
-    --orange: #FE7F2E;
-    --yellow: #FCCA47;
-    --yellow-orange: #FAAF40;
-    --blue: #06205B;
-    /* --blue: #243871; */
-    --darkblue: #050E37;
-    /* --darkblue: #06205B; */
-    --tosca: #65FFFC;
+    --yellow: #FECC00;
+    --blue: #19366C;
+    --blue-light: #AFCEFE;
+    --red-light: #F5E0E4;
+    --green: #00833D;
     --grey: #B6B6B6;
     --grey-light: #D9D9D9;
+
+    --font-body: "Asap", sans-serif;
+    --font-urbanist: 'Urbanist', sans-serif;
 }
 
 * {
     font-family: 'Asap', sans-serif;
+    scroll-behavior: smooth;
+    transition: all 0.6s ease-in; 
 }
 
 [data-aos] {
-    transition-duration: 1s !important;
+    transition-duration: 1.2s !important;
 }
 
 h3 {
     font-size: 42px;
     font-weight: 700;
 }
-.navbar {
-    transition: 0.8s;
-}
+
 .navbar-primary {
-    color: var(--black);
+    color: var(--blue);
     background: var(--white);
 }
 .navbar-secondary {
-    color: var(--black);
+    color: var(--blue);
     background: var(--white);
 }
-.navImg1 {
-    height: 35px;
+#navImg1 {
+    height: 45px;
+    transition: all 0.2s ease-in-out;
 }
-.navImg2 {
-    height: 35px;
+#navImg2 {
+    height: 60px;
+    transition: all 0.2s ease-in-out;
 }
 .navbar .nav-link {
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
 }
 .navbar .nav-link.join-now {
+    font-size: 17px;
     font-weight: 700;
-    font-size: 24px;
-    /* background: var(--pink); */
-    /* background: url('/asset/img/icons/join-now.webp'); */
+    background: var(--green);
     color: var(--white);
-    /* border-radius: 10px; */
-    position: relative;
-}
-.navbar .img-join-now {
-    position: absolute;
-    width: 200px;
-    top: -20px;
-    left: -20px
+    border-radius: 10px;
 }
 .navbar-primary .nav-link {
-    /* color: var(--white); */
+    color: var(--blue);
 }
 .navbar-secondary .nav-link {
     color: var(--black);
 }
 .navbar-primary .nav-link:hover,
 .navbar-secondary .nav-link:hover {
-    color: var(--orange);
-    font-weight: 600;
+    color: var(--green);
+    font-weight: 700;
 }
 .navbar-primary .nav-link.join-now:hover,
 .navbar-secondary .nav-link.join-now:hover {
     color: var(--white);
 }
 .navbar-nav .active a {
-    font-weight: 600;
-    color: var(--orange);
+    font-weight: 700;
+    color: var(--green);
 }
+@media (width <= 992px) {
+    #navbarNav {
+        padding: 12px 0;
+    }
+    .navbar .nav-link {
+        font-size: 14px;
+    }
+    .navbar .nav-link.join-now {
+        font-size: 13px;
+    }
+    #navImg1 {
+        height: 28px;
+    }
+    #navImg2 {
+        height: 50px;
+    }
+}
+
 .container {
     max-width: 1200px;
 }
@@ -136,25 +148,6 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar .navbar-collapse {
-        align-items: start;
-    }
-    .navbar-toggler {
-        background: var(--white);
-    }
-    .navbar-toggler:focus {
-        box-shadow: none;
-    }
-    .navImg1 {
-        display: none;
-    }
-    .navbar .nav-link {
-        font-size: 12px;
-    }
-    .navbar .nav-link.join-now {
-        font-size: 12px;
-        color: var(--darkblue);
-    }
     .jumbotron {
         min-height: 200px;
         background-position: center;

@@ -13,7 +13,9 @@
     <script src="https://kit.fontawesome.com/d11faf3e43.js" crossorigin="anonymous"></script>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Asap:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style/faq/style.css">
@@ -35,25 +37,19 @@
 </head>
 
 <body class="mx-auto" style="max-width: 1920px;">
-    <nav class="navbar navbar-expand-lg navbar-primary sticky-top p-0 mx-auto" id="navbar">
-        <div class="container d-flex justify-content-between px-md-5 px-3 py-3 mx-auto">
-            <a href="index.html" class="d-flex justify-content-center align-items-center">
-                <img class="navbar-pic navImg1 navImg1-light" id="" src="asset/img/icons/allin-logo.png" alt="ALL-In Eduspace" loading="lazy">
-                <img class="navbar-pic ps-3 navImg2 navImg2-light" id="" src="asset/img/icons/iir-logo.png" alt="Innovators In Residence" loading="lazy">
+    <nav class="navbar navbar-expand-lg navbar-primary sticky-top px-lg-5 p-0" id="navbar">
+        <div class="container-lg container-fluid d-flex justify-content-between px-md-5 px-3 py-md-2 py-2 mx-lg-3 mx-auto">
+            <a href="index.html">
+                <!-- <img class="navbar-pic py-md-1 my-2" id="navImg1" src="asset/img/icons/allin-logo.webp" alt="ALL-In Eduspace" loading="lazy"> -->
+                <img class="navbar-pic" id="navImg2" src="asset/img/main/2024_GIP_AUSSIE_LOGO.webp" alt="Global Immersion Program" loading="lazy">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end mt-md-0 mt-3" id="navbarNav">
-                <ul class="navbar-nav align-items-center gap-md-3">
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-md-5">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="junior.html">Junior Program</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="senior.html">Senior Program</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="faq.html">FAQ</a>
@@ -61,9 +57,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
                     </li>
-                    <li class="nav-item ms-md-3 ms-0 position-relative">
-                        <img class="img-join-now d-none d-md-flex" src="asset/img/icons/join-now.webp" alt="Spark 1" loading="lazy">
-                        <a class="nav-link join-now px-3 py-2 my-1" href="index.html#program">JOIN NOW</a>
+                    <li class="nav-item ms-md-3 ms-0">
+                        <a class="nav-link join-now px-3 py-2 my-1" href="https://forms.gle/DmXixKCHFy1BaffY7" target="_blank">JOIN NOW</a>
                     </li>
                 </ul>
             </div>
