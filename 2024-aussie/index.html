@@ -87,10 +87,12 @@
 
 <body class="mx-auto" style="max-width: 1920px;">
     <nav class="navbar navbar-expand-lg navbar-primary sticky-top px-lg-5 p-0" id="navbar">
+        <img class="navbar-pic-logo position-absolute d-none d-md-block" src="asset/img/main/2024_GIP_AUSSIE_LOGO.webp" alt="Global Immersion Program" loading="lazy">
+ 
         <div class="container-fluid d-flex justify-content-between px-md-5 px-3 py-md-2 py-2 mx-lg-3 mx-auto">
             <a href="index.html">
                 <img class="navbar-pic py-md-1 my-2" id="navImg1" src="asset/img/icons/allin-logo.webp" alt="ALL-In Eduspace" loading="lazy">
-                <img class="navbar-pic d-none" id="navImg2" src="asset/img/main/2024_GIP_AUSSIE_LOGO.webp" alt="Global Immersion Program" loading="lazy">
+                <img class="navbar-pic d-md-none" id="navImg2" src="asset/img/main/2024_GIP_AUSSIE_LOGO.webp" alt="Global Immersion Program" loading="lazy">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -152,9 +154,12 @@
                     <img class="img-fluid d-lg-block d-none" src="asset/img/main/2024_GIP_AUSSIE_TITLE.webp" alt="" srcset="" loading="lazy" data-aos="fade-up">
                 </div>
             </div>
-            <img class="d-lg-block d-none" src="asset/img/main/logo_gip_date.webp" alt="" srcset="" loading="lazy" data-aos="fade-up">
-            <img class="d-lg-none d-block" src="asset/img/main/2024_GIP_AUSSIE_TITLE_MOBILE.webp" alt="" srcset="" loading="lazy" data-aos="fade-up">
-            <div class="col d-flex flex-md-row flex-column-reverse gap-md-2 gap-5">
+            <div class="position-relative">
+                <img class="d-md-block d-none gip-logo gip-logo-inactive" id="gip-logo" src="asset/img/main/2024_GIP_AUSSIE_LOGO.webp" alt="" srcset="" >
+                <img class="d-md-block d-none w-100" id="gip-logo" src="asset/img/main/logo_gip_date_2.webp" alt="" srcset="" >
+            </div>
+            <img class="d-lg-none d-bloc" src="asset/img/main/2024_GIP_AUSSIE_TITLE_MOBILE.webp" alt="" srcset="" loading="lazy" data-aos="fade-up">
+            <div class="col d-flex flex-md-row flex-column-reverse gap-md-2 gap-5 mt-5">
                 <div class="col d-flex flex-column justify-content-center align-items-center">
                     <p data-aos="fade-right">
                         The Global Immersion Program offers a <span>dynamic 10-day career exploration opportunity</span> for students aspiring to pursue education and careers in Australia.
@@ -552,6 +557,20 @@
         $(function () {
             $(window).scroll(function () {
                 var scrolled = $(window).scrollTop();
+                var gipOffset = $('#gip-logo').offset();
+                
+                if (gipOffset.top - scrolled <= 200) {
+                    $('.navbar-pic-logo').addClass('navbar-pic-logo-active');
+                    $('#gip-logo').removeClass('gip-logo-inactive');
+                    $('#gip-logo').addClass('gip-logo-active');
+                    $('#gip-logo').removeClass('gip-logo-end');
+                } else {
+                    $('.navbar-pic-logo').removeClass('navbar-pic-logo-active');
+                    $('#gip-logo').addClass('gip-logo-inactive');
+                    $('#gip-logo').removeClass('gip-logo-active');
+                    $('#gip-logo').removeClass('gip-logo-end');
+                }
+
                 var width = window.innerWidth;
                 if (width >= 768) {
                     if (scrolled >= 450) {
@@ -583,15 +602,15 @@
                 }
                 // Navbar 
                 if (width >= 768) {
-                    if (scrolled >= 2250) {
+                    if (scrolled >= 2500) {
                         $('.navbar').removeClass('navbar-primary');
                         $('.navbar').addClass('navbar-secondary');
-                        $('#navImg1').addClass('d-none');
+                        $('#navImg1').addClass('navbar-pic-inactive');
                         $('#navImg2').removeClass('d-none');
                     } else {
                         $('.navbar').removeClass('navbar-secondary');
                         $('.navbar').addClass('navbar-primary');
-                        $('#navImg1').removeClass('d-none');
+                        $('#navImg1').removeClass('navbar-pic-inactive');
                         $('#navImg2').addClass('d-none');
                     }
                     // if (scrolled >= 2700) {
@@ -602,7 +621,7 @@
                     //     $('#navImg2').addClass('d-none');
                     // }
                 } else if (width <= 768) {
-                    if (scrolled >= 1620) {
+                    if (scrolled >= 1420) {
                         $('.navbar').removeClass('navbar-primary');
                         $('.navbar').addClass('navbar-secondary');
                         $('#navImg1').addClass('d-none');
