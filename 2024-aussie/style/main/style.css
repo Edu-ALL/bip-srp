@@ -51,6 +51,7 @@
   opacity: 0;
 }
 .navbar-pic-logo {
+  display: none;
   top: 200px;
   left: 108px;
   width: 43%;
@@ -322,7 +323,7 @@
 #testimonial .card {
   min-height: 250px !important;
   height: 100%;
-  border-radius: 18px;
+  border-radius: 0px;
   border: none;
 }
 #testimonial .card .testi-content p {
