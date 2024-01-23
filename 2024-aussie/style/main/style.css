@@ -24,6 +24,11 @@
   transition-duration: 1.2s !important;
 }
 
+/* Reusable */
+.text-justify {
+  text-align: justify;
+}
+
 .navbar * {
   font-family: var(--font-body);
 }
@@ -221,16 +226,41 @@
   }
 }
 
-#benefits-2 h1 {
+.benefits-2-title {
+  color: var(--blue);
+  font-weight: 600; 
+}
+
+.benefits-2-img-title {
+  width: 200px;
+}
+
+.benefits-2-item h1 {
+  color: var(--green);
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.benefits-2-item h3 {
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.benefits-2-img-city {
+height: 100px;
+}
+
+/* #benefits-2 h1 {
   color: var(--blue);
   font-weight: 700;
-}
-#benefits-2 .parallelogram {
+} */
+/* #benefits-2 .parallelogram {
   transform: skew(150deg);
   min-width: 450px;
   max-width: 450px;
-}
-#benefits-2 .parallelogram.sydney {
+} */
+/* #benefits-2 .parallelogram.sydney {
   background: linear-gradient(92deg, #afcefe -0.89%, #6c8abd 14.54%, #304d82 29.48%, #19366c 36.71%);
 }
 #benefits-2 .parallelogram.melbourne {
@@ -250,7 +280,7 @@
 #benefits-2 .parallelogram h3 {
   color: var(--white);
   font-size: 24px;
-}
+} */
 
 .gip-logo {
   /* z-index: 99999; */
