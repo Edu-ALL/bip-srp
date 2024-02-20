@@ -241,6 +241,11 @@
   font-size: 32px;
 }
 
+.form h1{
+  color: var(--blue);
+  font-weight: 700;
+}
+
 .benefits-2-item h3 {
   color: var(--blue);
   font-weight: 800;
