@@ -1,665 +1,1311 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Meta Pixel Code -->
-    <script>
-        ! function (f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '452159126932334');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=452159126932334&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!--fontawesome-->
-    <script src="https://kit.fontawesome.com/d11faf3e43.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d11faf3e43.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- JQuery UI -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style/main/style.css">
-    
-    <!-- Splide -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link rel="stylesheet" href="style/main/style.css" />
+    <link rel="stylesheet" href="style/output.css" />
 
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-
-    <link rel="apple-touch-icon" sizes="180x180" href="asset/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="asset/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="asset/img/favicon/favicon-16x16.png">
-
-    <!-- Primary Meta Tags -->
-    <title>Global Immersion Program 2024 | AUSTRALIA</title>
-    <meta name="title" content="Global Immersion Program 2024 | AUSTRALIA">
-    <meta name="description" content="The Global Immersion Program offers a dynamic 10-day career exploration opportunity for students aspiring to pursue education and careers in Australia. With hands-on workshops, company visits, and networking sessions, the program provides insight into diverse fields such as business, science, tech, and design, offering valuable skills for future career success. ">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://immersion-program.all-inedu.com/">
-    <meta property="og:title" content="Global Immersion Program 2024 | AUSTRALIA">
-    <meta property="og:description" content="The Global Immersion Program offers a dynamic 10-day career exploration opportunity for students aspiring to pursue education and careers in Australia. With hands-on workshops, company visits, and networking sessions, the program provides insight into diverse fields such as business, science, tech, and design, offering valuable skills for future career success. ">
-    <meta property="og:image" content="logo-allin.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="asset/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="asset/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="asset/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="asset/img/favicon/site.webmanifest" />
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FR5TNG0EQ"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3FR5TNG0EQ"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-3FR5TNG0EQ');
+      gtag("config", "G-3FR5TNG0EQ");
     </script>
-</head>
 
+    <!-- Primary Meta Tags -->
+    <title>Global Immersion Program 2024 | JAPAN</title>
+    <meta name="title" content="Global Immersion Program" />
+    <meta
+      name="description"
+      content="A career immersion program designed for students interested in physical sciences, life sciences, or business streams, providing a real-life implementation in the research field & business with tangible outcomes."
+    />
+  </head>
 
-<body class="mx-auto" style="max-width: 1920px;">
-    <nav class="navbar navbar-expand-lg navbar-primary sticky-top px-lg-5 p-0" id="navbar">
-        <img class="navbar-pic-logo position-absolute d-none d-lg-block" src="asset/img/main/2024_GIP_AUSSIE_LOGO.webp" alt="Global Immersion Program" loading="lazy">
-        <div class="container-fluid d-flex justify-content-between px-md-5 px-3 py-md-2 py-2 mx-lg-3 mx-auto">
-            <a href="index.html">
-                <img class="navbar-pic py-md-1 my-2" id="navImg1" src="asset/img/icons/allin-logo.webp" alt="ALL-In Eduspace" loading="lazy">
-                <img class="navbar-pic d-none d-md-none" id="navImg2" src="asset/img/main/2024_GIP_AUSSIE_LOGO.webp" alt="Global Immersion Program" loading="lazy">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
-                <ul class="navbar-nav align-items-center gap-md-5">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item ms-md-3 ms-0">
-                        <a class="nav-link join-now px-3 py-2 my-1" href="#form">JOIN NOW</a>
-                    </li>
-                </ul>
-            </div>
+  <body class="mx-auto" style="max-width: 1920px">
+    <nav
+      class="navbar navbar-expand-lg navbar-primary sticky-top px-lg-5 p-0"
+      id="navbar"
+    >
+      <img
+        class="navbar-pic-logo position-absolute d-none d-lg-block"
+        src="asset/img/main/logo_gip.png"
+        alt="Global Immersion Program"
+        loading="lazy"
+      />
+      <div
+        class="container-fluid d-flex justify-content-between px-md-5 px-3 py-md-2 py-2 mx-lg-3 mx-auto"
+      >
+        <a href="index.html">
+          <img
+            class="navbar-pic py-md-1 my-2"
+            id="navImg1"
+            src="asset/img/icons/eduall.png"
+            alt="ALL-In Eduspace"
+            loading="lazy"
+          />
+          <img
+            class="navbar-pic d-none d-md-none"
+            id="navImg2"
+            src="asset/img/main/logo_gip.png"
+            alt="Global Immersion Program"
+            loading="lazy"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center gap-md-5">
+            <li class="nav-item active">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item ms-md-3 ms-0">
+              <a class="nav-link join-now px-3 py-2 my-1" href="#form"
+                >JOIN NOW</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <div class="container-fluid d-flex flex-column p-0 gap-4" id="header">
+    <main>
+      <section class="container-fluid d-flex flex-column p-0 gap-4" id="header">
         <div class="col d-flex flex-lg-row flex-column-reverse header-section">
-            <div class="col text-start">
-                <div class="header-field d-flex flex-column justify-content-evenly align-items-start" data-aos="fade-right">
-                    <h3 class="pe-lg-5">
-                        Australia, a top expat haven, welcomes around <span>7.5 million expats</span> and over <span>700,000 international students.</span>
-                    </h3>
-                    <p>
-                        Source: https://www.william-russell.com
-                    </p>
-                </div>
-                <div class="header-field d-flex flex-column justify-content-evenly align-items-start" data-aos="fade-right">
-                    <h3 class="pe-lg-5">
-                        With a stellar quality of life and friendly culture, it's a <span>hot spot for expats and digital nomads.</span>
-                    </h3>
-                    <p>
-                        Source: https://www.william-russell.com
-                    </p>
-                </div>
-                <div class="header-field d-flex flex-column justify-content-evenly align-items-start" data-aos="fade-right">
-                    <h3 class="pe-lg-5">
-                        <span>Are you prepared to embark on your adventure in Australia?</span>
-                    </h3>
-                </div>
-            </div>
-            <div class="col header-section-img d-flex flex-row justify-content-end pb-lg-0 pb-3">
-                <img class="img-fluid" id="header-section-img" src="asset/img/main/header_section_1.webp" alt="" srcset="" loading="lazy" data-aos="fade-up">
-            </div>
-        </div>
-        <div class="col d-flex flex-column gap-md-3 gap-3 event">
-            <div class="col d-none flex-row" style="background-color: var(--blue);">
-                <div class="col">
-                    <img class="img-fluid d-lg-block d-none" src="asset/img/main/logo_gip.webp" alt="" srcset="" loading="lazy" data-aos="fade-up">
-                </div>
-                <div class="col">
-                    <img class="img-fluid d-lg-block d-none" src="asset/img/main/2024_GIP_AUSSIE_TITLE.webp" alt="" srcset="" loading="lazy" data-aos="fade-up">
-                </div>
-            </div>
-            <div class="position-relative">
-                <img class="d-lg-block d-none gip-logo gip-logo-inactive" id="gip-logo" src="asset/img/main/2024_GIP_AUSSIE_LOGO.webp" alt="" srcset="" >
-                <img class="d-lg-block d-none w-100" id="gip-logo" src="asset/img/main/logo_gip_date_2.webp" alt="" srcset="" >
-            </div>
-            <img class="d-lg-none d-bloc" src="asset/img/main/2024_GIP_AUSSIE_TITLE_MOBILE.webp" alt="" srcset="" loading="lazy" data-aos="fade-up">
-            <div class="col d-flex flex-md-row flex-column-reverse gap-md-2 gap-5 mt-5">
-                <div class="col d-flex flex-column justify-content-center align-items-center text-justify">
-                    <p data-aos="fade-right">
-                        The Global Immersion Program offers a <span>dynamic 10-day career exploration opportunity</span> for students aspiring to pursue education and careers in Australia.
-                    </p>
-                    <p data-aos="fade-right text-justify">
-                        With hands-on workshops, company visits, and networking sessions, the program provides insight into <span>diverse fields such as business, science, tech, and design</span>, offering valuable skills for future career success. 
-                    </p>
-                    <h3 data-aos="fade-right text-justify ">
-                        Join us to not only experience the excitement of <span class="mark">being a student in Australia</span> but also to lay the foundation for <span class="mark">your post-graduation career journey!</span>
-                    </h3>
-                </div>
-                <div class="col d-flex align-items-end justify-content-end" id="event-img-1">
-                    <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_HERO_IMAGE.webp" alt="" srcset="" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </div>
+          <div class="col text-start">
+            <div
+              class="header-field d-flex flex-column justify-content-evenly align-items-start"
+              data-aos="fade-right"
+            >
+              <div>
+                <h3 class="pe-lg-5">
+                  Japan, a global leader in <span>emerging science</span> and
+                  <span>technology</span>, attracts millions of visitors and
+                  thousands of international students each year.
+                </h3>
+                <p class="mt-4">Source: japan.go.jp</p>
+              </div>
 
-    <div class="container p-5 pb-lg-0 pb-4 my-md-5 my-2" id="benefits-1">
-        <div class="col d-flex flex-wrap align-items-end justify-content-center row-cols-md-3 row-cols-1 gap-3" data-aos="fade-up">
-            <div class="col img">
-                <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_1-14.webp" alt="" srcset="" loading="lazy">
+              <a
+                href="#"
+                class="tw-py-2 tw-px-12 tw-bg-black tw-text-white tw-font-semibold tw-text-lg hover:tw-bg-primary"
+                >Apply Now</a
+              >
             </div>
-            <div class="col img">
-                <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_1-13.webp" alt="" srcset="" loading="lazy">
+            <div
+              class="header-field d-flex flex-column justify-content-evenly align-items-start"
+              data-aos="fade-right"
+            >
+              <div>
+                <h3 class="pe-lg-5">
+                  Renowned for its
+                  <span
+                    >innovation, cutting-edge research, and rich cultural
+                    heritage,</span
+                  >
+                  Japan is a top destination for aspiring scientists and tech
+                  enthusiasts.
+                </h3>
+                <p class="mt-4">Source: japan.go.jp</p>
+              </div>
+              <a
+                href="#"
+                class="tw-py-2 tw-px-12 tw-bg-black tw-text-white tw-font-semibold tw-text-lg hover:tw-bg-primary"
+                >Apply Now</a
+              >
             </div>
-            <div class="col img">
-                <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_1-12.webp" alt="" srcset="" loading="lazy">
+            <div
+              class="header-field d-flex flex-column justify-content-evenly align-items-start"
+              data-aos="fade-right"
+            >
+              <h3 class="pe-lg-5">
+                <span
+                  >Are you ready to start your journey and experience the
+                  emerging science and technologies in Japan?
+                </span>
+              </h3>
             </div>
-            <div class="col img">
-                <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_1-15.webp" alt="" srcset="" loading="lazy">
-            </div>
-            <div class="col img">
-                <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_1-16.webp" alt="" srcset="" loading="lazy">
-            </div>
+          </div>
+          <div
+            class="col header-section-img d-flex flex-row justify-content-end pb-lg-0 pb-3"
+          >
+            <img
+              class="img-fluid"
+              id="header-section-img"
+              src="asset/img/main/header_section_1.webp"
+              alt=""
+              srcset=""
+              loading="lazy"
+              data-aos="fade-up"
+            />
+          </div>
         </div>
-    </div>
-
-    <div class="container p-lg-5 p-4 my-md-3 my-4" id="benefits-2">
-        <h1 class="text-center benefits-2-title" data-aos="fade-up">WHY SYDNEY & MELBOURNE?</h1>
-        <div class="col-lg-10 d-flex flex-lg-row flex-column align-items-start mt-4 mx-auto gap-lg-0 gap-4">
-            <div class="col d-flex flex-column align-items-start justify-content-center gap-lg-2 gap-1" data-aos="fade-up">
-                <img src="asset/img/main/melbourne.webp" alt="melbourne" class="benefits-2-img-title">
-                <div class="d-flex flex-column justify-content-center">
-                    <div class="benefits-2-item">
-                        <div class="col d-flex flex-row align-items-center justify-content-start px-3 gap-3">
-                            <h1>#4</h1>
-                            <div class="col d-flex flex-wrap">
-                                <h3>Best city for students</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="benefits-2-item">
-                        <div class="col d-flex flex-row align-items-center justify-content-start px-3 gap-3">
-                            <h1>#3</h1>
-                            <div class="col d-flex flex-wrap">
-                                <h3>Most liveable city</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="benefits-2-item">
-                        <div class="col d-flex flex-row align-items-center justify-content-start px-3 gap-3">
-                            <h1 class="ms-4">3</h1>
-                            <div class="col d-flex flex-wrap">
-                                <h3>Global 100 top universities</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="benefits-2-item">
-                        <div class="col d-flex flex-row align-items-center justify-content-start px-3 gap-3">
-                            <h1>#3</h1>
-                            <div class="col d-flex flex-wrap">
-                                <h3>City with permanent migrants in Australia city</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="asset/img/main/melbourne_city.webp" alt="melbourne city" class="benefits-2-img-city" style="height: 115px;">
-                </div>
+        <div class="col d-flex flex-column gap-md-3 gap-3 event me-3">
+          <div
+            class="col d-none flex-row"
+            style="background-color: var(--blue)"
+          >
+            <div class="col">
+              <img
+                class="img-fluid d-lg-block d-none"
+                src="asset/img/main/logo_gip.webp"
+                alt=""
+                srcset=""
+                loading="lazy"
+                data-aos="fade-up"
+              />
             </div>
-            <div class="col d-flex flex-column align-items-lg-end justify-content-start gap-lg-2 gap-1" data-aos="fade-up">
-                <img src="asset/img/main/sydney.webp" alt="sydney" class="benefits-2-img-title ">
-                <div class="d-flex flex-column justify-content-center">
-                    <div class="benefits-2-item">
-                        <div class="col d-flex flex-row align-items-center justify-content-start px-3 gap-3">
-                            <h1>#7</h1>
-                            <div class="col d-flex flex-wrap">
-                                <h3>Best city for students</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="benefits-2-item">
-                        <div class="col d-flex flex-row align-items-center justify-content-start px-3 gap-3">
-                            <h1>35,000+</h1>
-                            <div class="col d-flex flex-wrap">
-                                <h3>International students</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="benefits-2-item">
-                        <div class="col d-flex flex-row align-items-center justify-content-start px-3 gap-3">
-                            <h1 class="ms-3">4</h1>
-                            <div class="col d-flex flex-wrap">
-                                <h3>Global 100 top universities</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="benefits-2-item">
-                        <div class="col d-flex flex-row align-items-center justify-content-start px-3 gap-3">
-                            <h1>#1</h1>
-                            <div class="col d-flex flex-wrap">
-                                <h3>City with permanent migrants in Australia city</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="asset/img/main/sydney_city.webp" alt="sydney city" class="benefits-2-img-city">
-                </div>
+            <div class="col">
+              <img
+                class="img-fluid d-lg-block d-none"
+                src="asset/img/main/2024_GIP_AUSSIE_TITLE.webp"
+                alt=""
+                srcset=""
+                loading="lazy"
+                data-aos="fade-up"
+              />
             </div>
+          </div>
+          <div class="position-relative">
+            <img
+              class="d-lg-block d-none gip-logo gip-logo-inactive"
+              id="gip-logo"
+              src="asset/img/main/logo_gip.png"
+              alt=""
+              srcset=""
+            />
+            <img
+              class="d-lg-block d-none w-100"
+              id="gip-logo"
+              src="asset/img/main/logo_gip_date_2.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <img
+            class="d-lg-none d-bloc"
+            src="asset/img/main/logo-gip-mobile.png"
+            alt=""
+            srcset=""
+            loading="lazy"
+            data-aos="fade-up"
+          />
+          <div
+            class="col d-flex flex-md-row flex-column-reverse gap-md-2 gap-5 mt-5"
+          >
+            <div
+              class="col d-flex flex-column justify-content-center align-items-center text-justify"
+            >
+              <h4
+                data-aos="fade-down"
+                class="tw-text-center tw-uppercase tw-text-4xl md:tw-text-5xl tw-font-bold"
+              >
+                <span class="tw-text-primary"> Let’s explore STEM</span> <br />
+                through emerging new technologies!
+              </h4>
+              <p data-aos="fade-up" class="tw-mt-4 tw-font-semibold">
+                Global Immersion Program is a
+                <span>10-day career exploration program</span> that provides
+                insight into diverse fields that offer valuable skills for
+                future career success in STEM. With
+                <span>hands-on workshops, company visits</span>, and
+                <span>networking</span> sessions, you get to earn everything
+                from career exploring to resume building and networking!
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
+      </section>
 
-    <div class="container p-lg-5 p-4 my-md-3 my-4" id="benefits-3">
-        <h1 class="text-center" data-aos="fade-up">GROW YOUR SKILLS, NETWORK, AND EXPERIENCE</h1>
-        <div class="col">
-            <div class="col d-lg-flex d-none flex-wrap position-relative align-items-end justify-content-center gap-2" data-aos="fade-up">
-                <div class="col img">
-                    <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_2-9.webp" alt="" srcset="" loading="lazy">
-                </div>
-                <div class="col img">
-                    <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_2-10.webp" alt="" srcset="" loading="lazy">
-                </div>
-                <div class="col img">
-                    <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_2-11.webp" alt="" srcset="" loading="lazy">
-                </div>
-                <div class="col img">
-                    <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_2-12.webp" alt="" srcset="" loading="lazy">
-                </div>
-                <div class="col img">
-                    <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_2-13.webp" alt="" srcset="" loading="lazy">
-                </div>
-            </div>
-            <div class="row d-lg-none d-flex align-items-center justify-content-center mt-3" data-aos="fade-up">
-                <section class="splide" id="splide-benefits-3">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide d-flex align-items-end">
-                                <div class="testi-card text-center">
-                                    <div class="card border-0 justify-content-between">
-                                        <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_2-9.webp" alt="" srcset="">
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide d-flex align-items-end">
-                                <div class="testi-card text-center">
-                                    <div class="card border-0 justify-content-between">
-                                        <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_2-10.webp" alt="" srcset="">
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide d-flex align-items-end">
-                                <div class="testi-card text-center">
-                                    <div class="card border-0 justify-content-between">
-                                        <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_2-11.webp" alt="" srcset="">
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide d-flex align-items-end">
-                                <div class="testi-card text-center">
-                                    <div class="card border-0 justify-content-between">
-                                        <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_2-12.webp" alt="" srcset="">
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide d-flex align-items-end">
-                                <div class="testi-card text-center">
-                                    <div class="card border-0 justify-content-between">
-                                        <img class="img-fluid" src="asset/img/main/2024_GIP_AUSSIE_BENE_2-13.webp" alt="" srcset="">
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
+      <section class="container-fluid tw-px-4 md:tw-px-[7rem]">
+        <div class="tw-mt-6 md:tw-mt-12 tw-overflow-hidden">
+          <div class="endless tw-w-full tw-flex tw-h-20 md:tw-h-32">
+            <img
+              src="asset/img/main/endless/endless-1.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain"
+            />
+            <img
+              src="asset/img/main/endless/endless-2.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-3.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-4.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-5.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-6.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-7.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-8.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-1.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-2.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-3.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-4.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-5.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-6.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-7.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+            <img
+              src="asset/img/main/endless/endless-8.png"
+              alt="endless"
+              class="tw-h-full tw-object-contain -tw-ml-16"
+            />
+          </div>
         </div>
-    </div>
+      </section>
 
-    <div class="container p-lg-5 p-3 my-md-3 my-4">
-        <div class="col" data-aos="fade-up">
-            <img class="img-fluid d-lg-block d-none" src="asset/img/main/2024_GIP_AUSSIE_APPLY_NOW.webp" alt="" srcset="" loading="lazy">
-            <img class="img-fluid d-lg-none d-block" src="asset/img/main/2024_GIP_AUSSIE_APPLY_NOW_MOBILE.webp" alt="" srcset="" loading="lazy">
+      <section class="tw-pt-12 md:tw-pb-12 md:tw-pt-24 tw-px-4">
+        <div
+          class="tw-relative tw-h-32 md:tw-h-96 tw-overflow-hidden"
+          id="japan"
+        >
+          <div
+            class="japan-3 tw-bottom-0 tw-right-0 tw-absolute tw-h-32 md:tw-h-96"
+          >
+            <img
+              src="asset/img/main/japan/japan-3.webp"
+              alt="japan"
+              class="tw-w-full tw-h-full tw-object-contain"
+            />
+          </div>
+          <div
+            class="japan-2 tw-bottom-0 tw-left-0 tw-right-0 tw-absolute tw-h-32 md:tw-h-96"
+          >
+            <img
+              src="asset/img/main/japan/japan-2.webp"
+              alt="japan"
+              class="tw-w-full tw-h-full tw-object-contain"
+            />
+          </div>
+          <div class="japan-1 tw-bottom-0 tw-absolute tw-h-32 md:tw-h-96">
+            <img
+              src="asset/img/main/japan/japan-1.webp"
+              alt="japan"
+              class="tw-w-full tw-h-full tw-object-contain"
+            />
+          </div>
         </div>
-    </div>
+      </section>
 
-    <div class="container-fluid section-7 pt-md-3 pt-2 pb-md-2 mt-3 form" id="form">
-        <div class="container text-center px-md-5 px-3 py-md-5 py-4">
-            <div class="col" data-aos="fade-up">
-                <div class="col-md-10 mx-auto">
-                    <h1 class="text-center" data-aos="fade-up">Let's be the future problem solvers and start your project in Australia!</h1>
-                    <iframe width="100%" height="600" src="https://crm-allinedu.com/form/program?program_name=Experiential%20Learning%20%3A%20Innovation%20In%20Residence" frameborder="0"></iframe>
+      <!-- Benefits -->
+      <section class="tw-py-12 tw-px-4 md:tw-px-[7rem]">
+        <!-- Benefits -->
+        <div
+          class="tw-mt-12 tw-grid tw-grild-cols-1 md:tw-grid-cols-6 tw-place-items-center tw-justify-items-center gap-4"
+        >
+          <img
+            src="asset/img/main/benefit-1.webp"
+            alt="benefit"
+            class="tw-w-full tw-h-36 tw-object-contain tw-object-center md:tw-col-span-3 md:tw-object-right"
+          />
+          <img
+            src="asset/img/main/benefit-2.webp"
+            alt="benefit"
+            class="tw-w-full tw-h-36 tw-object-contain tw-object-center md:tw-col-span-3 md:tw-object-left"
+          />
+          <img
+            src="asset/img/main/benefit-3.webp"
+            alt="benefit"
+            class="tw-w-full tw-h-36 tw-object-contain tw-object-center md:tw-col-span-2"
+          />
+          <img
+            src="asset/img/main/benefit-4.webp"
+            alt="benefit"
+            class="tw-w-full tw-h-36 tw-object-contain tw-object-center md:tw-col-span-2"
+          />
+          <img
+            src="asset/img/main/benefit-5.webp"
+            alt="benefit"
+            class="tw-w-full tw-h-36 tw-object-contain tw-object-center md:tw-col-span-2"
+          />
+        </div>
+
+        <div
+          class="tw-mt-12 tw-grid md:tw-grid-cols-2 tw-grid-cols-1 tw-place-items-center tw-justify-items-center gap-4"
+        >
+          <h3 class="tw-text-4xl tw-font-bold tw-justify-self-start">
+            GROW YOUR <span style="color: var(--red)">SKILLS</span>, <br />
+            <span style="color: var(--red)">NETWORK</span>, AND
+            <span style="color: var(--red)">EXPERIENCE</span>
+          </h3>
+          <div
+            class="tw-w-full tw-bg-[url('../asset/img/main/aset-1.webp')] tw-bg-cover tw-py-8 tw-px-4 md:tw-px-8 tw-bg-blend-multiply tw-bg-primary tw-group hover:tw-bg-transparent tw-transition-all form tw-duration-300"
+          >
+            <h4
+              class="text-lg md:tw-text-2xl tw-font-semibold tw-text-white group-hover:tw-opacity-0 tw-transition-all tw-duration-300"
+            >
+              Discover the synercy of diverse <br />
+              STEM field in a single journey
+            </h4>
+          </div>
+          <div
+            class="tw-w-full tw-bg-[url('../asset/img/main/aset-2.webp')] tw-bg-cover tw-py-8 tw-px-4 md:tw-px-8 tw-bg-blend-multiply tw-bg-primary tw-group hover:tw-bg-transparent tw-transition-all form tw-duration-300"
+          >
+            <h4
+              class="text-lg md:tw-text-2xl tw-font-semibold tw-text-white group-hover:tw-opacity-0 tw-transition-all tw-duration-300"
+            >
+              Tour renowned universities, <br />
+              institutions, and companies
+            </h4>
+          </div>
+          <div
+            class="tw-w-full tw-bg-[url('../asset/img/main/aset-3.webp')] tw-bg-cover tw-py-12 tw-px-4 md:tw-px-8 tw-bg-blend-multiply tw-bg-primary tw-group hover:tw-bg-transparent tw-transition-all form tw-duration-300"
+          >
+            <h4
+              class="text-lg md:tw-text-2xl tw-font-semibold tw-text-white group-hover:tw-opacity-0 tw-transition-all tw-duration-300"
+            >
+              Engage in hands-on workshops
+            </h4>
+          </div>
+          <div
+            class="tw-w-full tw-bg-[url('../asset/img/main/aset-4.webp')] tw-bg-cover tw-py-8 tw-px-4 md:tw-px-8 tw-bg-blend-multiply tw-bg-primary tw-group hover:tw-bg-transparent tw-transition-all form tw-duration-300"
+          >
+            <h4
+              class="text-lg md:tw-text-2xl tw-font-semibold tw-text-white group-hover:tw-opacity-0 tw-transition-all tw-duration-300"
+            >
+              Experience the Japanese lifestyle with <br />
+              visits to landmarks and museums
+            </h4>
+          </div>
+          <div
+            class="tw-w-full tw-bg-[url('../asset/img/main/aset-5.webp')] tw-bg-cover tw-py-9 tw-px-4 md:tw-px-8 tw-bg-blend-multiply tw-bg-primary tw-group hover:tw-bg-transparent tw-transition-all form tw-duration-300"
+          >
+            <h4
+              class="tw-text-lg md:tw-text-lg tw-font-semibold tw-text-white group-hover:tw-opacity-0 tw-transition-all tw-duration-300"
+            >
+              Participate in career-sharing sessions and network with Indonesian
+              students and professionals
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- Swiper -->
+      <section class="tw-my-12 tw-relative">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide tw-relative">
+              <div class="tw-absolute tw-bottom-3 md:tw-bottom-7 tw-px-4">
+                <div class="tw-overflow-hidden">
+                  <div class="endless tw-w-full tw-flex tw-h-12 md:tw-h-28">
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-1.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-2.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-3.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-4.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-5.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-6.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-7.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-8.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-1.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-2.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-3.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-4.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-5.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-6.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-7.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-1/endless-8.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                  </div>
                 </div>
+              </div>
+              <img
+                src="asset/img/main/timeline-1.png"
+                alt="timeline"
+                class="tw-w-full tw-h-full tw-object-contain"
+              />
             </div>
-        </div>
-    </div>
-
-    <div class="container p-lg-5 p-3 my-md-3 my-4" id="testimonial">
-        <h1 class="text-center" data-aos="fade-up">WHAT THEY SAY</h1>
-        <div class="col mt-md-4 mt-3 mx-md-5" data-aos="fade-up">
-            <div class="row align-items-center justify-content-center gap-md-5 gap-4">
-                <section class="splide" id="splide-testimonials">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <div class="testi-card text-center">
-                                    <div class="card justify-content-between p-4" style="background: var(--blue)">
-                                        <div class="testi-content text-start" style="color: var(--white)">
-                                            <div class="card-body d-flex p-0">
-                                                <p class="m-0">
-                                                “The program included many different types of activities so that everyone gets a chance
-                                                to explore their own personal interests”
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="testi-author text-end" style="color: var(--yellow)">
-                                            <p class="p-0 m-0" style="font-weight: 600">Leandra</p>
-                                            <p class="p-0 m-0">Science Research Immersion Program</p>
-                                            <p class="p-0 m-0">January 2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="testi-card text-center">
-                                    <div class="card justify-content-between p-4" style="background: var(--blue)">
-                                        <div class="testi-content text-start" style="color: var(--white)">
-                                            <div class="card-body d-flex p-0">
-                                                <p class="m-0">
-                                                    “I got the chance to meet new people and make friends”
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="testi-author text-end" style="color: var(--yellow)">
-                                            <p class="p-0 m-0" style="font-weight: 600">Fayra</p>
-                                            <p class="p-0 m-0">Science Research Program 2020</p>
-                                            <p class="p-0 m-0">January 2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="testi-card text-center">
-                                    <div class="card justify-content-between p-4" style="background: var(--blue)">
-                                        <div class="testi-content text-start" style="color: var(--white)">
-                                            <div class="card-body d-flex p-0">
-                                                <p class="m-0">
-                                                    “I like how the program allows us to learn new things and experience, as well as having fun”
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="testi-author text-end" style="color: var(--yellow)">
-                                            <p class="p-0 m-0" style="font-weight: 600">Jerome</p>
-                                            <p class="p-0 m-0">Business Immersion Program</p>
-                                            <p class="p-0 m-0">January 2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="testi-card text-center">
-                                    <div class="card justify-content-between p-4" style="background: var(--blue)">
-                                        <div class="testi-content text-start" style="color: var(--white)">
-                                            <div class="card-body d-flex p-0">
-                                                <p class="m-0">
-                                                    “I am able to go out of my comfort zone and made some new friends throughout the program”
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="testi-author text-end" style="color: var(--yellow)">
-                                            <p class="p-0 m-0" style="font-weight: 600">Daniel</p>
-                                            <p class="p-0 m-0">Business Immersion Program</p>
-                                            <p class="p-0 m-0">January 2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="testi-card text-center">
-                                    <div class="card justify-content-between p-4" style="background: var(--blue)">
-                                        <div class="testi-content text-start" style="color: var(--white)">
-                                            <div class="card-body d-flex p-0">
-                                                <p class="m-0">
-                                                    “Helped me navigate my future”
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="testi-author text-end" style="color: var(--yellow)">
-                                            <p class="p-0 m-0" style="font-weight: 600">Zachary Tsushima</p>
-                                            <p class="p-0 m-0">Business Immersion Program 2020</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+            <div class="swiper-slide tw-relative">
+              <div class="tw-absolute tw-bottom-3 md:tw-bottom-7 tw-px-4">
+                <div class="tw-overflow-hidden">
+                  <div class="endless tw-w-full tw-flex tw-h-12 md:tw-h-28">
+                    <img
+                      src="asset/img/main/timeline-endless-2/endless-1.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-2/endless-2.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-2/endless-3.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-2/endless-4.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-2/endless-5.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-2/endless-6.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-2/endless-1.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-2/endless-2.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-2/endless-3.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-2/endless-4.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-2/endless-5.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-2/endless-6.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <img
+                src="asset/img/main/timeline-2.png"
+                alt="timeline"
+                class="tw-w-full tw-h-full tw-object-contain"
+              />
             </div>
+            <div class="swiper-slide tw-relative">
+              <div class="tw-absolute tw-bottom-3 md:tw-bottom-7 tw-px-4">
+                <div class="tw-overflow-hidden">
+                  <div class="endless tw-w-full tw-flex tw-h-12 md:tw-h-28">
+                    <img
+                      src="asset/img/main/timeline-endless-3/endless-1.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-3/endless-2.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-3/endless-3.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-3/endless-4.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-3/endless-5.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-3/endless-1.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-3/endless-2.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-3/endless-3.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-3/endless-4.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                    <img
+                      src="asset/img/main/timeline-endless-3/endless-5.png"
+                      alt="endless"
+                      class="tw-h-full tw-object-contain tw-ml-2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <img
+                src="asset/img/main/timeline-3.png"
+                alt="timeline"
+                class="tw-w-full tw-h-full tw-object-contain"
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-    </div>
 
-    <div class="container-fluid footer py-3 mt-5">
+        <div
+          class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-between tw-z-50"
+        >
+          <div
+            class="tw-invisible tw-duration-0 timeline-button-prev tw-rotate-180 tw-bg-gradient-to-l tw-from-[#f2666d3e] tw-to-[#f2666d00] tw-text-white tw-font-bold tw-h-full tw-flex tw-items-center tw-w-10 md:tw-w-20 tw-justify-end tw-pr-1 md:tw-pr-3"
+          >
+            <div class="tw-scale-50 md:tw-scale-100">
+              <svg
+                width="24px"
+                height="24px"
+                viewBox="-5.5 0 26 26"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                fill="#C93756"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>chevron-right</title>
+                  <desc>Created with Sketch Beta.</desc>
+                  <defs></defs>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                    sketch:type="MSPage"
+                  >
+                    <g
+                      id="Icon-Set-Filled"
+                      sketch:type="MSLayerGroup"
+                      transform="translate(-474.000000, -1196.000000)"
+                      fill="#C93756"
+                    >
+                      <path
+                        d="M488.404,1207.36 L477.637,1197.6 C476.806,1196.76 475.459,1196.76 474.629,1197.6 C473.798,1198.43 473.798,1199.77 474.629,1200.6 L483.885,1209 L474.629,1217.4 C473.798,1218.23 473.798,1219.57 474.629,1220.4 C475.459,1221.24 476.806,1221.24 477.637,1220.4 L488.404,1210.64 C488.854,1210.19 489.052,1209.59 489.015,1209 C489.052,1208.41 488.854,1207.81 488.404,1207.36"
+                        id="chevron-right"
+                        sketch:type="MSShapeGroup"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="timeline-button-next tw-duration-0 tw-bg-gradient-to-l tw-from-[#f2666d3e] tw-to-[#f2666d00] tw-text-white tw-font-bold tw-h-full tw-flex tw-items-center tw-w-10 md:tw-w-20 tw-justify-end tw-pr-1 md:tw-pr-3"
+          >
+            <div class="tw-scale-50 md:tw-scale-100">
+              <svg
+                width="24px"
+                height="24px"
+                viewBox="-5.5 0 26 26"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                fill="#C93756"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>chevron-right</title>
+                  <desc>Created with Sketch Beta.</desc>
+                  <defs></defs>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                    sketch:type="MSPage"
+                  >
+                    <g
+                      id="Icon-Set-Filled"
+                      sketch:type="MSLayerGroup"
+                      transform="translate(-474.000000, -1196.000000)"
+                      fill="#C93756"
+                    >
+                      <path
+                        d="M488.404,1207.36 L477.637,1197.6 C476.806,1196.76 475.459,1196.76 474.629,1197.6 C473.798,1198.43 473.798,1199.77 474.629,1200.6 L483.885,1209 L474.629,1217.4 C473.798,1218.23 473.798,1219.57 474.629,1220.4 C475.459,1221.24 476.806,1221.24 477.637,1220.4 L488.404,1210.64 C488.854,1210.19 489.052,1209.59 489.015,1209 C489.052,1208.41 488.854,1207.81 488.404,1207.36"
+                        id="chevron-right"
+                        sketch:type="MSShapeGroup"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Apply Now -->
+      <section class="tw-py-12 tw-px-4 md:tw-px-[7rem]">
+        <div class="tw-flex tw-flex-col tw-items-center gap-8">
+          <img
+            src="asset/img/main/apply-now.png"
+            alt="apply now"
+            class="tw-w-full tw-h-full"
+          />
+          <a
+            href="#"
+            class="tw-py-2 tw-px-12 tw-bg-black tw-text-white tw-font-semibold tw-text-lg hover:tw-bg-primary"
+            >Apply Now</a
+          >
+        </div>
+      </section>
+
+      <section class="tw-py-12 tw-px-4 md:tw-px-[7rem]">
+        <div class="tw-flex tw-flex-col md:tw-flex-row">
+          <div class="tw-w-full">
+            <h2
+              class="tw-text-[var(--red)] tw-text-[7rem] tw-leading-4 tw-font-bold"
+            >
+              “
+            </h2>
+            <h3 class="tw-font-bold tw-text-3xl md:tw-text-5xl">
+              WHAT OUR <br />
+              <span class="tw-text-[var(--red)]">PARTICIPANTS SAID</span>
+            </h3>
+          </div>
+          <div class="tw-w-full tw-mt-6 md:tw-mt-0">
+            <div class="swiper mySwiper2 tw-h-[210px] md:tw-h-[340px]">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="asset/img/main/testi/testi-1.png"
+                    alt="testi"
+                    class="tw-w-full tw-bg-contain"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="asset/img/main/testi/testi-2.png"
+                    alt="testi"
+                    class="tw-w-full tw-bg-contain"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="asset/img/main/testi/testi-3.png"
+                    alt="testi"
+                    class="tw-w-full tw-bg-contain"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="asset/img/main/testi/testi-4.png"
+                    alt="testi"
+                    class="tw-w-full tw-bg-contain"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="asset/img/main/testi/testi-5.png"
+                    alt="testi"
+                    class="tw-w-full tw-bg-contain"
+                  />
+                </div>
+              </div>
+
+              <!-- Arrow -->
+              <div
+                class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-between tw-z-50"
+              >
+                <div
+                  class="tw-invisible tw-duration-0 testi-button-prev tw-rotate-180 tw-bg-gradient-to-t tw-from-[#f2666d3e] tw-to-[#f2666d00] tw-text-white tw-font-bold tw-w-full tw-flex tw-items-center tw-h-5 md:tw-h-10 tw-justify-center"
+                >
+                  <div class="tw-scale-50 md:tw-scale-100 tw-rotate-90">
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="-5.5 0 26 26"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                      fill="#C93756"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>chevron-right</title>
+                        <desc>Created with Sketch Beta.</desc>
+                        <defs></defs>
+                        <g
+                          id="Page-1"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                          sketch:type="MSPage"
+                        >
+                          <g
+                            id="Icon-Set-Filled"
+                            sketch:type="MSLayerGroup"
+                            transform="translate(-474.000000, -1196.000000)"
+                            fill="#C93756"
+                          >
+                            <path
+                              d="M488.404,1207.36 L477.637,1197.6 C476.806,1196.76 475.459,1196.76 474.629,1197.6 C473.798,1198.43 473.798,1199.77 474.629,1200.6 L483.885,1209 L474.629,1217.4 C473.798,1218.23 473.798,1219.57 474.629,1220.4 C475.459,1221.24 476.806,1221.24 477.637,1220.4 L488.404,1210.64 C488.854,1210.19 489.052,1209.59 489.015,1209 C489.052,1208.41 488.854,1207.81 488.404,1207.36"
+                              id="chevron-right"
+                              sketch:type="MSShapeGroup"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="testi-button-next tw-duration-0 tw-bg-gradient-to-t tw-from-[#f2666d3e] tw-to-[#f2666d00] tw-text-white tw-font-bold tw-w-full tw-flex tw-items-center tw-h-5 md:tw-h-10 tw-justify-center"
+                >
+                  <div class="tw-scale-50 md:tw-scale-100 tw-rotate-90">
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="-5.5 0 26 26"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                      fill="#C93756"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>chevron-right</title>
+                        <desc>Created with Sketch Beta.</desc>
+                        <defs></defs>
+                        <g
+                          id="Page-1"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                          sketch:type="MSPage"
+                        >
+                          <g
+                            id="Icon-Set-Filled"
+                            sketch:type="MSLayerGroup"
+                            transform="translate(-474.000000, -1196.000000)"
+                            fill="#C93756"
+                          >
+                            <path
+                              d="M488.404,1207.36 L477.637,1197.6 C476.806,1196.76 475.459,1196.76 474.629,1197.6 C473.798,1198.43 473.798,1199.77 474.629,1200.6 L483.885,1209 L474.629,1217.4 C473.798,1218.23 473.798,1219.57 474.629,1220.4 C475.459,1221.24 476.806,1221.24 477.637,1220.4 L488.404,1210.64 C488.854,1210.19 489.052,1209.59 489.015,1209 C489.052,1208.41 488.854,1207.81 488.404,1207.36"
+                              id="chevron-right"
+                              sketch:type="MSShapeGroup"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-fluid footer py-3 mt-5 tw-px-4 md:tw-px-[7rem]">
         <div class="container px-md-3 px-2 py-md-4 py-3">
-            <div class="row px-md-4">
-                <div class="col-md-4 d-flex align-items-center">
-                    <img class="" src="asset/img/icons/ALL-in Eduspace Logo.png" alt="ALL-In Eduspace" loading="lazy">
-                </div>
-                <div class="col-md-3 mt-md-0 mt-4">
-                    <div class="col my-md-2 my-1">
-                        <i class="fas fa-globe fa-fw"></i>
-                        <a>www.all-inedu.com</a>
-                    </div>
-                    <div class="col my-md-2 my-1">
-                        <i class="fab fa-instagram fa-fw"></i>
-                        <a>@allineduspace</a>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-md-0 mt-2">
-                    <div class="col my-md-2 my-1">
-                        <i class="fas fa-mobile-alt fa-fw"></i>
-                        <a href="https://wa.me/6281808081363" target="_blank">+62 818-0808-1363</a> /
-                        <a href="https://wa.me/6287860811413" target="_blank">+62 878-6081-1413</a>
-                    </div>
-                    <div class="col my-md-2 my-1">
-                        <i class="fas fa-envelope fa-fw"></i>
-                        <a class="ms-md-1 ms-0">info@all-inedu.com</a>
-                    </div>
-                </div>
+          <div class="row px-md-4">
+            <div class="col-md-4 d-flex align-items-center">
+              <img
+                class=""
+                src="asset/img/icons/eduall-set-white.png"
+                alt="ALL-In Eduspace"
+                loading="lazy"
+              />
             </div>
-            <div class="col my-3">
-                <hr class="my-1">
+            <div class="col-md-3 mt-md-0 mt-4">
+              <div class="col my-md-2 my-1">
+                <i class="fas fa-globe fa-fw"></i>
+                <a href="www.edu-all.com">www.edu-all.com</a>
+              </div>
+              <div class="col my-md-2 my-1">
+                <i class="fab fa-instagram fa-fw"></i>
+                <a>@eduall.official</a>
+              </div>
             </div>
-            <div class="row px-md-4">
-                <div class="col-md-4 mt-md-0 mt-1">
-                    <a>
-                        Jl Jeruk Kembar Blok Q9 No. 15 <br> Srengseng, Kembangan <br> DKI Jakarta
-                    </a>
-                </div>
-                <div class="col-md-3 mt-md-0 mt-2">
-                    <div class="col my-md-2 my-1">
-                        <a>#itsALLintheprep</a>
-                    </div>
-                    <div class="col my-md-2 my-1">
-                        <a>#TakeOnYourFuture</a>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-md-0 mt-2">
-                    <div class="col my-md-2 my-1">
-                        <a>Copyright © 2023 · ALL-in Eduspace.</a>
-                    </div>
-                    <div class="col my-md-2 my-1">
-                        <a>All rights reserved.</a>
-                    </div>
-                </div>
+            <div class="col-md-4 mt-md-0 mt-2">
+              <div class="col my-md-2 my-1">
+                <i class="fas fa-mobile-alt fa-fw"></i>
+                <a href="https://wa.me/6281808081363" target="_blank"
+                  >+62 818-0808-1363</a
+                >
+                /
+                <a href="https://wa.me/6287860811413" target="_blank"
+                  >+62 878-6081-1413</a
+                >
+              </div>
+              <div class="col my-md-2 my-1">
+                <i class="fas fa-envelope fa-fw"></i>
+                <a class="ms-md-1 ms-0" href="mailto:info@edu-all.com"
+                  >info@edu-all.com</a
+                >
+              </div>
             </div>
+          </div>
+          <div class="col my-3">
+            <hr class="my-1" />
+          </div>
+          <div class="row px-md-4">
+            <div class="col-md-4 mt-md-0 mt-1">
+              <a>
+                Jl Jeruk Kembar Blok Q9 No. 15 <br />
+                Srengseng, Kembangan <br />
+                DKI Jakarta
+              </a>
+            </div>
+            <div class="col-md-3 mt-md-0 mt-2">
+              <div class="col my-md-2 my-1">
+                <a>#itsALLintheprep</a>
+              </div>
+              <div class="col my-md-2 my-1">
+                <a>#TakeOnYourFuture</a>
+              </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-2">
+              <div class="col my-md-2 my-1">
+                <a>Copyright © 2024 · EduALL</a>
+              </div>
+              <div class="col my-md-2 my-1">
+                <a>All rights reserved.</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-    <script>
-        new Splide('#splide-benefits-3', {
-            width: '100%',
-            type: 'slide',
-            autoScroll: {
-                speed: 3,
-            },
-            breakpoints: {
-                992: {
-                    perPage: 2,
-                    gap: '-2.0rem',
-                    padding: 0,
-                },
-            }
-        }).mount();
-        new Splide('#splide-testimonials', {
-            perPage: 2,
-            width: '100%',
-            gap: '15px',
-            type: 'loop',
-            padding: {
-                left: 0,
-                right: 5
-            },
-            autoScroll: {
-                speed: 3,
-            },
-            breakpoints: {
-                768: {
-                    perPage: 1,
-                    gap: '10px',
-                    padding: 35,
-                    type: 'slide',
-                },
-            }
-        }).mount();
-    </script>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
-        $(function () {
-            $(window).scroll(function () {
-                var scrolled = $(window).scrollTop();
-                var gipOffset = $('#gip-logo').offset();
-                
-                if (gipOffset.top - scrolled <= 200) {
-                    $('.navbar-pic-logo').addClass('navbar-pic-logo-active');
-                    $('#gip-logo').removeClass('gip-logo-inactive');
-                    $('#gip-logo').addClass('gip-logo-active');
-                    $('#gip-logo').removeClass('gip-logo-end');
-                } else {
-                    $('.navbar-pic-logo').removeClass('navbar-pic-logo-active');
-                    $('#gip-logo').addClass('gip-logo-inactive');
-                    $('#gip-logo').removeClass('gip-logo-active');
-                    $('#gip-logo').removeClass('gip-logo-end');
-                }
+      $(function () {
+        $(window).scroll(function () {
+          var scrolled = $(window).scrollTop();
+          var gipOffset = $("#gip-logo").offset();
 
-                var width = window.innerWidth;
-                if (width >= 768) {
-                    if (scrolled >= 450) {
-                        $('#header-section-img').attr('src', 'asset/img/main/header_section_2.webp')
-                    }
-                    if (scrolled >= 1050) {
-                        $('#header-section-img').attr('src', 'asset/img/main/header_section_3.webp')
-                    }
-                    if (scrolled < 1050) {
-                        $('#header-section-img').attr('src', 'asset/img/main/header_section_2.webp')
-                    }
-                    if (scrolled < 450) {
-                        $('#header-section-img').attr('src', 'asset/img/main/header_section_1.webp')
-                    }
-                }
-                if (width <= 768) {
-                    if (scrolled >= 300) {
-                        $('#header-section-img').attr('src', 'asset/img/main/header_section_2.webp')
-                    }
-                    if (scrolled >= 850) {
-                        $('#header-section-img').attr('src', 'asset/img/main/header_section_3.webp')
-                    }
-                    if (scrolled < 850) {
-                        $('#header-section-img').attr('src', 'asset/img/main/header_section_2.webp')
-                    }
-                    if (scrolled < 300) {
-                        $('#header-section-img').attr('src', 'asset/img/main/header_section_1.webp')
-                    }
-                }
-                // Navbar 
-                if (width >= 768) {
-                    if (scrolled >= 2000) {
-                        $('.navbar').removeClass('navbar-primary');
-                        $('.navbar').addClass('navbar-secondary');
-                        $('#navImg1').addClass('navbar-pic-inactive');
-                        $('#navImg2').removeClass('d-none');
-                    } else {
-                        $('.navbar').removeClass('navbar-secondary');
-                        $('.navbar').addClass('navbar-primary');
-                        $('#navImg1').removeClass('navbar-pic-inactive');
-                        $('#navImg2').addClass('d-none');
-                    }
-                    // if (scrolled >= 2700) {
-                    //     $('#navImg1').addClass('d-none');
-                    //     $('#navImg2').removeClass('d-none');
-                    // } else {
-                    //     $('#navImg1').removeClass('d-none');
-                    //     $('#navImg2').addClass('d-none');
-                    // }
-                } else if (width <= 768) {
-                    if (scrolled >= 1420) {
-                        $('.navbar').removeClass('navbar-primary');
-                        $('.navbar').addClass('navbar-secondary');
-                        $('#navImg1').addClass('d-none');
-                        $('#navImg2').removeClass('d-none');
-                    } else {
-                        $('.navbar').removeClass('navbar-secondary');
-                        $('.navbar').addClass('navbar-primary');
-                        $('#navImg1').removeClass('d-none');
-                        $('#navImg2').addClass('d-none');
-                    }
-                    // if (scrolled >= 2250) {
-                    //     $('#navImg1').addClass('d-none');
-                    //     $('#navImg2').removeClass('d-none');
-                    // } else {
-                    //     $('#navImg1').removeClass('d-none');
-                    //     $('#navImg2').addClass('d-none');
-                    // }
-                }
-            });
+          if (gipOffset.top - scrolled <= 200) {
+            $(".navbar-pic-logo").addClass("navbar-pic-logo-active");
+            $("#gip-logo").removeClass("gip-logo-inactive");
+            $("#gip-logo").addClass("gip-logo-active");
+            $("#gip-logo").removeClass("gip-logo-end");
+          } else {
+            $(".navbar-pic-logo").removeClass("navbar-pic-logo-active");
+            $("#gip-logo").addClass("gip-logo-inactive");
+            $("#gip-logo").removeClass("gip-logo-active");
+            $("#gip-logo").removeClass("gip-logo-end");
+          }
+
+          var japanOffset = $("#japan").offset();
+
+          for (let i = 1; i <= 3; i++) {
+            $(`.japan-${i}`)
+              .toggleClass(
+                `japan-${i}-inactive`,
+                japanOffset.top - scrolled > 700 ||
+                  japanOffset.top - scrolled < -100
+              )
+              .toggleClass(
+                `japan-${i}-active`,
+                japanOffset.top - scrolled <= 700 &&
+                  japanOffset.top - scrolled > -100
+              );
+          }
+
+          var width = window.innerWidth;
+          if (width >= 768) {
+            if (scrolled >= 450) {
+              $("#header-section-img").attr(
+                "src",
+                "asset/img/main/header_section_2.webp"
+              );
+            }
+            if (scrolled >= 1050) {
+              $("#header-section-img").attr(
+                "src",
+                "asset/img/main/header_section_3.webp"
+              );
+            }
+            if (scrolled < 1050) {
+              $("#header-section-img").attr(
+                "src",
+                "asset/img/main/header_section_2.webp"
+              );
+            }
+            if (scrolled < 450) {
+              $("#header-section-img").attr(
+                "src",
+                "asset/img/main/header_section_1.webp"
+              );
+            }
+          }
+          if (width <= 768) {
+            if (scrolled >= 300) {
+              $("#header-section-img").attr(
+                "src",
+                "asset/img/main/header_section_2.webp"
+              );
+            }
+            if (scrolled >= 850) {
+              $("#header-section-img").attr(
+                "src",
+                "asset/img/main/header_section_3.webp"
+              );
+            }
+            if (scrolled < 850) {
+              $("#header-section-img").attr(
+                "src",
+                "asset/img/main/header_section_2.webp"
+              );
+            }
+            if (scrolled < 300) {
+              $("#header-section-img").attr(
+                "src",
+                "asset/img/main/header_section_1.webp"
+              );
+            }
+          }
+
+          // Navbar
+          if (width >= 768) {
+            if (scrolled > 0) {
+              $(".navbar").removeClass("navbar-primary");
+              $(".navbar").addClass("navbar-secondary");
+            } else {
+              $(".navbar").removeClass("navbar-secondary");
+              $(".navbar").addClass("navbar-primary");
+            }
+            if (scrolled >= 2000) {
+              $("#navImg1").addClass("navbar-pic-inactive");
+              $("#navImg2").removeClass("d-none");
+            } else {
+              $("#navImg1").removeClass("navbar-pic-inactive");
+              $("#navImg2").addClass("d-none");
+            }
+          } else if (width <= 768) {
+            if (scrolled > 0) {
+              $(".navbar").removeClass("navbar-primary");
+              $(".navbar").addClass("navbar-secondary");
+            } else {
+              $(".navbar").removeClass("navbar-secondary");
+              $(".navbar").addClass("navbar-primary");
+            }
+            if (scrolled >= 1420) {
+              $("#navImg1").addClass("d-none");
+              $("#navImg2").removeClass("d-none");
+            } else {
+              $("#navImg1").removeClass("d-none");
+              $("#navImg2").addClass("d-none");
+            }
+          }
         });
+      });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        navigation: {
+          nextEl: ".timeline-button-next",
+          prevEl: ".timeline-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1.5,
+          },
+        },
+      });
+
+      swiper.on("slideChange", function () {
+        console.log(`hello: ${swiper.isBeginning} ${swiper.isEnd}`);
+        var prevButton = document.querySelector(".timeline-button-prev");
+        var nextButton = document.querySelector(".timeline-button-next");
+        if (swiper.isBeginning) {
+          prevButton.classList.add("tw-invisible");
+        } else {
+          prevButton.classList.remove("tw-invisible");
+        }
+        if (swiper.isEnd) {
+          nextButton.classList.add("tw-invisible");
+        } else {
+          nextButton.classList.remove("tw-invisible");
+        }
+      });
+
+      var swiper2 = new Swiper(".mySwiper2", {
+        direction: "vertical",
+        slidesPerView: 2.2,
+        navigation: {
+          nextEl: ".testi-button-next",
+          prevEl: ".testi-button-prev",
+        },
+      });
+
+      swiper2.on("slideChange", function () {
+        var prevButton = document.querySelector(".testi-button-prev");
+        var nextButton = document.querySelector(".testi-button-next");
+        if (swiper2.isBeginning) {
+          prevButton.classList.add("tw-invisible");
+        } else {
+          prevButton.classList.remove("tw-invisible");
+        }
+        if (swiper2.isEnd) {
+          nextButton.classList.add("tw-invisible");
+        } else {
+          nextButton.classList.remove("tw-invisible");
+        }
+      });
+    </script>
+  </body>
 </html>

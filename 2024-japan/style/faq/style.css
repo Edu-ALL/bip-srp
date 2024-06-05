@@ -1,5 +1,6 @@
 :root {
     /* add color */
+    --primary: #0000FF;
     --white: #FFFFFF;
     --black: #313131;
     --yellow: #FECC00;
@@ -93,34 +94,6 @@ h3 {
     }
 }
 
-.container {
-    max-width: 1200px;
-}
-.jumbotron {
-    background: url('/asset/img/faq/header FAQ.webp');
-    background-size: cover;
-    /* background-position: 0% 60%; */
-    background-position: center;
-    min-height: 320px;
-}
-.jumbotron h3 {
-    color: var(--blue);
-    font-size: 54px;
-}
-
-.section-1 h4 {
-    font-size: 20px;
-    font-weight: 500;
-}
-.section-1 h3 {
-    color: #545454;
-    font-size: 20px;
-    font-weight: 600;
-}
-.section-1 p {
-    font-size: 16px;
-    font-weight: 500;
-}
 
 .footer {
     background: var(--blue);

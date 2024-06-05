@@ -1,3 +1,77 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Ambit";
+  font-weight: 900;
+  src: url("../asset/font/ambit/Ambit-Black.otf");
+}
+@font-face {
+  font-family: "Ambit";
+  font-weight: 700;
+  src: url("../asset/font/ambit/Ambit-Bold.otf");
+}
+@font-face {
+  font-family: "Ambit";
+  font-weight: 600;
+  src: url("../asset/font/ambit/Ambit-SemiBold.otf");
+}
+@font-face {
+  font-family: "Ambit";
+  font-weight: 400;
+  src: url("../asset/font/ambit/Ambit-Regular.otf");
+}
+@font-face {
+  font-family: "Ambit";
+  font-weight: 300;
+  src: url("../asset/font/ambit/Ambit-Light.otf");
+}
+@font-face {
+  font-family: "Ambit";
+  font-weight: 200;
+  src: url("../asset/font/ambit/Ambit-ExtraLight.otf");
+}
+@font-face {
+  font-family: "Ambit";
+  font-weight: 100;
+  src: url("../asset/font/ambit/Ambit-Thin.otf");
+}
+
+
+.endless {
+  animation: endless 20s infinite linear;
+}
+
+@keyframes endless {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.japan-1, .japan-2, .japan-3 {
+    transition: all .5s ease-in;
+}
+
+.japan-1-inactive {
+    transform: translateX(-100%);
+}
+
+.japan-2-inactive {
+    transform: translateY(100%);
+}
+
+.japan-3-inactive {
+    transform: translateX(100%);
+}
+
+.japan-1-active {
+    transform: translateX(0%);
+}
+
+.japan-2-active, .japan-3-active {
+    transform: translateY(0%);
+}
