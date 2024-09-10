@@ -31,7 +31,7 @@
 }
 
 body {
-  /* background-image: url("/asset/img/background.webp"); */
+  /* background-image: url("asset/img/background.webp"); */
   background-size: contain;
 }
 
@@ -472,7 +472,7 @@ body {
   max-width: 1280px;
 }
 .jumbotron {
-  background: url("/asset/img/faq/header-faq.webp");
+  background: url("asset/img/faq/header-faq.webp");
   background-size: cover;
   /* background-position: 0% 60%; */
   background-position: center;
@@ -553,7 +553,7 @@ body {
 
 /* About US Page */
 .jumbotron-about {
-  background: url("/asset/img/about/header-about-us.png");
+  background: url("asset/img/about/header-about-us.png");
   background-size: cover;
   background-position: bottom;
   min-height: 480px;
@@ -564,7 +564,7 @@ body {
     min-height: 100px;
   }
   .jumbotron-about {
-    background: url("/asset/img/about/header-about-us-mobile.png");
+    background: url("asset/img/about/header-about-us-mobile.png");
     background-size: cover;
     background-position: center;
     min-height: 330px;
