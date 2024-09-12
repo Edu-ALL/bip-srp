@@ -97,7 +97,7 @@ h3 {
     max-width: 1200px;
 }
 .jumbotron {
-    background: url('asset/img/about/header about us.webp');
+    background: url('/asset/img/about/header about us.webp');
     background-size: cover;
     /* background-position: 0% 60%; */
     background-position: center;
