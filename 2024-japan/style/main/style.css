@@ -35,6 +35,10 @@ body {
   background-size: contain;
 }
 
+.main-container {
+  @apply tw-max-w-screen-xl tw-mx-auto;
+}
+
 /* .active-navbar {
   color: var(--red) !important;
 } */
@@ -314,7 +318,7 @@ body {
   /* transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms; */
-  width: 40%;
+  /* width: 40%; */
   transition: opacity 0ms linear;
 }
 

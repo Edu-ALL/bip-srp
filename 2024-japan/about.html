@@ -70,7 +70,10 @@
     />
   </head>
 
-  <body class="mx-auto tw-bg-[url('../asset/img/background-2.webp')]" style="max-width: 1920px">
+  <body
+    class="mx-auto tw-bg-[url('../asset/img/background-2.webp')]"
+    style="max-width: 1920px"
+  >
     <nav
       class="navbar navbar-expand-lg navbar-primary fixed px-lg-5 p-0"
       id="navbar"
@@ -127,9 +130,81 @@
         </div> -->
       </div>
     </nav>
+    <header
+      class="tw-fixed tw-left-1/2 tw--translate-x-1/2 tw-bottom-6 tw-z-50 tw-transition-all md:tw-hidden"
+    >
+      <nav class="tw-bg-[#262424] tw-rounded-2xl tw-shadow-lg tw-py-2">
+        <div class="tw-w-full tw-container tw-mx-auto tw-px-1 sm:tw-w-6/12">
+          <!-- Hamburger button (visible on small screens) -->
+          <div class="tw-flex tw-justify-center tw-items-center">
+            <button
+              id="menu-toggle"
+              class="tw-text-white tw-outline-none focus:tw-outline-none tw-w-full tw-flex tw-justify-center"
+            >
+              <!-- Icon for hamburger menu -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="tw-h-6 tw-w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Navigation links -->
+          <ul
+            id="menu"
+            class="tw-whitespace-nowrap tw-justify-center tw-relative tw-flex-col tw-hidden tw-md:flex-row tw-w-40 tw-items-center tw-mt-2 tw-pt-2 tw-border-t-2 tw-border-t-white"
+          >
+            <li class="tw-mb-2 tw-md:tw-mb-0 tw-w-full tw-md:tw-mr-2">
+              <a
+                id="home-link"
+                href="index.html"
+                class="navbar-item tw-text-white tw-text-base tw-rounded-full tw-px-6 tw-py-2 tw-text-center tw-w-full tw-block tw-font-light"
+              >
+                Home
+              </a>
+            </li>
+            <li class="tw-mb-2 tw-md:tw-mb-0 tw-w-full tw-md:tw-mr-2">
+              <a
+                href="faq.html"
+                class="navbar-item tw-text-white tw-text-base tw-rounded-full tw-px-6 tw-py-2 tw-text-center tw-w-full tw-block tw-font-light"
+              >
+                FAQ
+              </a>
+            </li>
+            <li class="tw-mb-2 tw-md:tw-mb-0 tw-w-full tw-md:tw-mr-2">
+              <a
+                href="about.html"
+                class="tw-bg-[#c93756] tw-font-bold  navbar-item tw-text-white tw-text-base tw-rounded-full tw-px-6 tw-py-2 tw-text-center tw-w-full tw-block"
+              >
+                About Us
+              </a>
+            </li>
+            <li class="tw-mb-2 tw-md:tw-mb-0 tw-w-full">
+              <a
+                href="index.html#join-now"
+                class="navbar-item tw-text-white tw-text-base tw-rounded-full tw-px-6 tw-py-2 tw-text-center tw-w-full tw-block tw-font-light"
+                id="join-now-link"
+              >
+                Join Now
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <header
-      class="tw-fixed tw-left-1/2 tw--translate-x-1/2 tw-bottom-16 tw-z-50 tw-transition-all"
+      class="tw-hidden md:tw-block tw-fixed tw-left-1/2 tw--translate-x-1/2 tw-bottom-16 tw-z-50 tw-transition-all"
     >
       <nav class="tw-bg-[#262424] tw-rounded-full tw-shadow-lg tw-py-2">
         <div class="tw-w-6/12 tw-container tw-mx-auto tw-px-1">
@@ -139,7 +214,7 @@
             <li>
               <a
                 href="index.html"
-                class=" navbar-item tw-text-white tw-text-base tw-rounded-full tw-px-6 tw-py-2 tw-font-light"
+                class="navbar-item tw-text-white tw-text-base tw-rounded-full tw-px-6 tw-py-2 tw-font-light"
               >
                 Home
               </a>
@@ -223,11 +298,11 @@
       </div>
     </div>
 
-    <div class="container-fluid tw-px-4 px-4 col-md-8 col-12 mx-auto ">
+    <div class="container-fluid tw-px-4 px-4 col-md-8 col-12 mx-auto">
       <div class="tw-gap-6 tw-overflow-hidden tw-flex tw-flex-col">
         <div
           class="endless tw-w-max tw-flex tw-text-[#F2666C] tw-text-center"
-          style="transition-duration: 20s;"
+          style="transition-duration: 20s"
         >
           <span class="tw-w-36">University of Pennsylvania</span>
           <span class="tw-w-36">Harvard University</span>
@@ -251,7 +326,9 @@
           <span class="tw-w-36">Imperial College London</span>
           <span class="tw-w-36">University College London</span>
         </div>
-        <span class="tw-italic tw-text-center tw-text-sm tw-font-semibold">and many more</span>
+        <span class="tw-italic tw-text-center tw-text-sm tw-font-semibold"
+          >and many more</span
+        >
       </div>
     </div>
 
@@ -285,7 +362,11 @@
               </div>
               <div class="col my-md-2 my-1">
                 <i class="fab fa-instagram fa-fw"></i>
-                <a href="https://www.instagram.com/eduall.official/" target="_blank">@eduall.official</a>
+                <a
+                  href="https://www.instagram.com/eduall.official/"
+                  target="_blank"
+                  >@eduall.official</a
+                >
               </div>
             </div>
             <div class="col-md-4 mt-md-0 mt-2">
@@ -344,6 +425,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+      const menuText = document.getElementById("menu-text");
+
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("tw-hidden");
+        menuText.classList.toggle("tw-hidden");
+      });
     </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
