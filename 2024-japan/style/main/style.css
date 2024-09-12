@@ -476,7 +476,7 @@ body {
   max-width: 1280px;
 }
 .jumbotron {
-  background: url("/asset/img/faq/header-faq.webp");
+  background: url("../../asset/img/faq/header-faq.webp");
   background-size: cover;
   /* background-position: 0% 60%; */
   background-position: center;
