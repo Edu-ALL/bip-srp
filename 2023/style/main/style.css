@@ -73,7 +73,7 @@ h3 {
     color: var(--orange);
 }
 .header {
-    /* background: url('/asset/img/main/header.png'); */
+    /* background: url('/2023/asset/img/main/header.png'); */
     /* background-size: cover;
     background-attachment: fixed; */
     /* min-height: 90vh; */
@@ -84,7 +84,7 @@ h3 {
     padding: 0px 42px;
 }
 .header .header-section-img {
-    background: url('/asset/img/main/research.webp');
+    background: url('/2023/asset/img/main/research.webp');
     background-size: 500px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -334,7 +334,7 @@ h3 {
         padding: 0px 24px;
     }
     .header .header-section {
-        background: url('/asset/img/main/research.webp');
+        background: url('/2023/asset/img/main/research.webp');
         background-size: 240px;
         background-attachment: fixed;
         background-repeat: no-repeat;
